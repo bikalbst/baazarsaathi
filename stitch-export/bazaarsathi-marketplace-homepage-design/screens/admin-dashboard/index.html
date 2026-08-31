@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BazaarSathi Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#151c27",
+                    "tertiary": "#a43a3a",
+                    "on-tertiary-fixed-variant": "#842225",
+                    "on-primary-container": "#00422b",
+                    "surface-container-highest": "#dce2f3",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "on-tertiary-fixed": "#410005",
+                    "on-surface-variant": "#3c4a42",
+                    "outline-variant": "#bbcabf",
+                    "primary-container": "#10b981",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb3af",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#684000",
+                    "surface-container-low": "#f0f3ff",
+                    "surface-dim": "#d3daea",
+                    "surface-bright": "#f9f9ff",
+                    "on-background": "#151c27",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#6ffbbe",
+                    "on-primary-fixed-variant": "#005236",
+                    "secondary-fixed": "#ffddb8",
+                    "surface-container-high": "#e2e8f8",
+                    "surface": "#f9f9ff",
+                    "outline": "#6c7a71",
+                    "surface-container": "#e7eefe",
+                    "on-tertiary-container": "#711419",
+                    "inverse-on-surface": "#ebf1ff",
+                    "inverse-surface": "#2a313d",
+                    "surface-variant": "#dce2f3",
+                    "secondary-container": "#fea619",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#4edea3",
+                    "inverse-primary": "#4edea3",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "primary": "#006c49",
+                    "secondary": "#855300",
+                    "on-secondary-fixed": "#2a1700",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-primary-fixed": "#002113",
+                    "surface-tint": "#006c49",
+                    "tertiary-container": "#fc7c78",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "0.25rem",
+                    "xl": "2rem",
+                    "sm": "0.5rem",
+                    "base": "4px",
+                    "2xl": "3rem",
+                    "gutter": "1.5rem",
+                    "lg": "1.5rem",
+                    "container-max": "1280px",
+                    "md": "1rem"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter", "sans-serif"],
+                    "body-md": ["Inter", "sans-serif"],
+                    "headline-lg": ["Inter", "sans-serif"],
+                    "body-lg": ["Inter", "sans-serif"],
+                    "label-md": ["Inter", "sans-serif"],
+                    "label-sm": ["Inter", "sans-serif"],
+                    "display": ["Inter", "sans-serif"],
+                    "headline-lg-mobile": ["Inter", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            },
+            boxShadow: {
+                'level-1': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                'level-2': '0 10px 30px rgba(0, 0, 0, 0.08)',
+                'level-3': '0 20px 50px rgba(0, 0, 0, 0.12)',
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface-container-high text-on-surface antialiased flex h-screen overflow-hidden">
+<!-- Sidebar -->
+<aside class="w-64 bg-inverse-surface text-inverse-on-surface flex flex-col hidden md:flex flex-shrink-0">
+<div class="h-16 flex items-center px-gutter border-b border-surface-variant/10">
+<h1 class="font-headline-md text-headline-md tracking-tight text-white">BazaarSathi Admin</h1>
+</div>
+<nav class="flex-1 overflow-y-auto py-lg px-sm">
+<ul class="space-y-sm">
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg bg-primary-container/20 text-white font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+                        Overview
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-inverse-on-surface/70 hover:text-white hover:bg-surface-variant/10 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+                        Users
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-inverse-on-surface/70 hover:text-white hover:bg-surface-variant/10 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+                        Listings
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-inverse-on-surface/70 hover:text-white hover:bg-surface-variant/10 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+                        Transactions
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-inverse-on-surface/70 hover:text-white hover:bg-surface-variant/10 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </a>
+</li>
+</ul>
+</nav>
+<div class="p-gutter border-t border-surface-variant/10">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-label-md text-label-md">
+                    A
+                </div>
+<div class="text-sm">
+<p class="font-label-md text-label-md text-white">Admin User</p>
+<p class="font-label-sm text-label-sm text-inverse-on-surface/50">admin@bazaarsathi.com</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col overflow-hidden">
+<!-- Header (Mobile nav & Context) -->
+<header class="h-16 bg-surface-container-lowest shadow-sm flex items-center justify-between px-gutter flex-shrink-0 z-10">
+<div class="flex items-center gap-sm">
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h2 class="font-headline-md text-headline-md text-on-surface">Dashboard Overview</h2>
+</div>
+<div class="flex items-center gap-sm">
+<button class="text-on-surface-variant hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"></span>
+</button>
+</div>
+</header>
+<!-- Scrollable Canvas -->
+<div class="flex-1 overflow-y-auto p-gutter lg:p-xl">
+<div class="max-w-container-max mx-auto space-y-xl">
+<!-- Metrics Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-lg shadow-level-1 hover:shadow-level-2 transition-shadow">
+<div class="flex items-center justify-between mb-sm">
+<h3 class="font-label-md text-label-md text-on-surface-variant">Total Users</h3>
+<span class="material-symbols-outlined text-primary">group</span>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">12,450</p>
+<p class="font-label-sm text-label-sm text-primary flex items-center gap-xs mt-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +5.2% this week
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-lg shadow-level-1 hover:shadow-level-2 transition-shadow">
+<div class="flex items-center justify-between mb-sm">
+<h3 class="font-label-md text-label-md text-on-surface-variant">Active Listings</h3>
+<span class="material-symbols-outlined text-secondary-container">inventory_2</span>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">3,820</p>
+<p class="font-label-sm text-label-sm text-primary flex items-center gap-xs mt-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +12 new today
+                        </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-lg shadow-level-1 hover:shadow-level-2 transition-shadow">
+<div class="flex items-center justify-between mb-sm">
+<h3 class="font-label-md text-label-md text-on-surface-variant">Total Revenue</h3>
+<span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">NPR 1,240,500</p>
+<p class="font-label-sm text-label-sm text-primary flex items-center gap-xs mt-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +8% vs last month
+                        </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-lg shadow-level-1 hover:shadow-level-2 transition-shadow">
+<div class="flex items-center justify-between mb-sm">
+<h3 class="font-label-md text-label-md text-on-surface-variant">Commission Earned</h3>
+<span class="material-symbols-outlined text-primary">savings</span>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">NPR 124,050</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-sm">
+                            Based on 10% standard rate
+                        </p>
+</div>
+</div>
+<!-- Recent Transactions Table -->
+<div class="bg-surface-container-lowest rounded-lg shadow-level-1 overflow-hidden">
+<div class="p-lg border-b border-surface-variant/50 flex justify-between items-center bg-surface-container-lowest sticky top-0">
+<h3 class="font-headline-md text-[20px] text-on-surface">Recent Transactions</h3>
+<button class="font-label-md text-label-md text-primary hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-variant/50">
+<th class="p-md font-label-md text-label-md text-on-surface-variant">Buyer</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant">Seller</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant">Item</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant text-right">Amount (NPR)</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant text-right">Commission (NPR)</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant text-center">Status</th>
+<th class="p-md font-label-md text-label-md text-on-surface-variant text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/30 font-body-md text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-md">Ramesh K.</td>
+<td class="p-md">Sita P.</td>
+<td class="p-md font-medium">Used iPhone 12</td>
+<td class="p-md text-right">45,000</td>
+<td class="p-md text-right">4,500</td>
+<td class="p-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm whitespace-nowrap">
+                                            Pending
+                                        </span>
+</td>
+<td class="p-md text-center">
+<div class="flex items-center justify-center gap-sm">
+<button class="font-label-md text-label-md text-primary hover:underline">Approve</button>
+<span class="text-outline-variant">|</span>
+<button class="font-label-md text-label-md text-error hover:underline">Reject</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-md">Hari T.</td>
+<td class="p-md">Gita M.</td>
+<td class="p-md font-medium">MacBook Air M1</td>
+<td class="p-md text-right">85,000</td>
+<td class="p-md text-right">8,500</td>
+<td class="p-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm whitespace-nowrap">
+                                            Approved
+                                        </span>
+</td>
+<td class="p-md text-center">
+<span class="font-label-md text-label-md text-on-surface-variant opacity-50 cursor-not-allowed">Processed</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-md">Nabin S.</td>
+<td class="p-md">Sunita B.</td>
+<td class="p-md font-medium">Sony A7III Camera</td>
+<td class="p-md text-right">120,000</td>
+<td class="p-md text-right">12,000</td>
+<td class="p-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm whitespace-nowrap">
+                                            Pending
+                                        </span>
+</td>
+<td class="p-md text-center">
+<div class="flex items-center justify-center gap-sm">
+<button class="font-label-md text-label-md text-primary hover:underline">Approve</button>
+<span class="text-outline-variant">|</span>
+<button class="font-label-md text-label-md text-error hover:underline">Reject</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-md">Priya Gurung</td>
+<td class="p-md">Bikash Tamang</td>
+<td class="p-md font-medium">Honda Dio Scooter</td>
+<td class="p-md text-right">95,000</td>
+<td class="p-md text-right">9,500</td>
+<td class="p-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm whitespace-nowrap">
+                                            Approved
+                                        </span>
+</td>
+<td class="p-md text-center">
+<span class="font-label-md text-label-md text-on-surface-variant opacity-50 cursor-not-allowed">Processed</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,212 @@
+{
+  "project": {
+    "id": "18028975412704871376",
+    "title": "BazaarSathi Marketplace Homepage Design"
+  },
+  "designSystem": {
+    "requestedId": "asset-stub-assets_1d3705de7fc842b0a46867438c4628b5",
+    "resolvedId": "assets/1d3705de7fc842b0a46867438c4628b5",
+    "localFiles": [
+      "design-system/DESIGN.md",
+      "design-system/design-system.json"
+    ]
+  },
+  "screens": [
+    {
+      "id": "573288e79a40454e8cd2bcbc3a1d8965",
+      "title": "A friendly, modern flat-style illustration of diverse people buying and selling items in a community marketplace. One person is handing a package to another, while others browse items like a guitar, a lamp, and a bicycle. Use the BazaarSathi color palette: emerald green (#10b981) and soft orange accents. Clean white background, minimalist and trustworthy feel. professional vector illustration.",
+      "deviceType": null,
+      "width": 848,
+      "height": 1264,
+      "localFiles": {
+        "screenshot": "screens/community-marketplace-illustration/screenshot.jpg",
+        "html": null
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLsIhrwUDRbKch9ehGgWGKqf7rOkMCUd2fn8eVdgI3JWBzkq_Yq9CWBxrNycrOOY9KgRQTCrclzn2hjaYFjwW6NdrsPjPwMKiz-ndTPELdtQvOZ2l7xfkMEElbCU17aZbEg7QUNdAvIyyPKcuEOOEB_FjzvHw1J7g7LG2tKfgPUnN6iu3k2kEtZWzDOxxoUxgOPvxwXdx-I0kxKPo5Vc2Ks4Tmk272a90zHDk1Xf8yWUT2IDQord1gpZICBI",
+        "html": null
+      }
+    },
+    {
+      "id": "992b9893cdbd4ba481562474413b9bee",
+      "title": "A high-quality, professional photograph of a vibrant local community marketplace in Nepal, featuring people browsing stalls with mountains in the distance, soft sunlight, shallow depth of field, minimalist and clean, suitable for a web hero background, emerald green and orange accents to match BazaarSathi branding.",
+      "deviceType": null,
+      "width": 1376,
+      "height": 768,
+      "localFiles": {
+        "screenshot": "screens/nepal-marketplace-hero-photo/screenshot.jpg",
+        "html": null
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLtzFQ-zVjPhLv-TfizH8zrHANrFan7jAJvMjZ0R2xtr_y-_H11LppnzJjQi3D6ac4Hx_TnhGwQUAtYcaG46drp_Alwd4f5lbmHWxuWaItkwWYkufD53-N8RhDiG2SiwuJJUNLeNZLbreRfCvMhRG2pprfE-pvpjbeIjXLLH3Ln9l-RMdkwQO3AnQEwzEYwQY1faUy7LTdeFDZzC0kNu3yTxcgIy2V_ouiEfcvULdRCv7OP-bD-dV41eOKs",
+        "html": null
+      }
+    },
+    {
+      "id": "59ee55df4f2843a196aae9c5238ddba0",
+      "title": "BazaarSathi Admin Dashboard",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/admin-dashboard/screenshot.png",
+        "html": "screens/admin-dashboard/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLtYPFzlGwaFV7wrz0G2GLPlxvlGo9sQC0tanFHK9vtTJj13Qq_8sEfSw0Mz2XC4kWuua5_xcnC9cgyZhU96qwos7MMJnJcO9CkWV6e6fc11xqUYQaLW1HZOTFHfOAWQvlttfFPEthWbwIz8EfAnQvcCyUrhVvMmHuLm6tbkEYUQ-z-6o9G7tXNGq3nJa5BiyfhwXBsvqIeOWOF3AhqiGgpqXLpYhks4xxqT3_x36lMjqBTvYk_SzY2IMGo",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4ODRmOTQyZDAwNDMxMDNmMmZhMzM5NDUxEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "81e55aaf99a54a518ebf1ff7c459c71d",
+      "title": "BazaarSathi Browse Listings",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/browse-listings/screenshot.png",
+        "html": "screens/browse-listings/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLvU4B5syeZZ06_VjsxgAr7ENiGpWAaQ1eaZhUtgiw_4mQe6WrvCcjZFxaZpHX65uPIvV-mxTz95Yd1vHhPD8YePnTqbbb1jXsIYxlpokH2wO5Nu3gyofXUgn2tZwXrW42XLY3F8ktA6R3ma8t5SV71U_-37dIkOTmiH-PD7ONEbpRdUr6n-_vwCQMd0Kag3ADoF5avkY62mCn1WWJz_Poj5uqEJE9PIlIrbtu29RmdJa4gwWk_xnP2Mb8E",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4MTZhMjBmYTcwMWE2MmY1NzdmMGM3MWY5EgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "9757c415c00f4c3aa0eaec1698fd45bb",
+      "title": "BazaarSathi Checkout",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/checkout/screenshot.png",
+        "html": "screens/checkout/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLvckkgUZYWtX4bsTfHruHNnbma-U1__qHJgOmRmUp1PRvm9lMJibI5iqpd-0kyhCQvSxTtufHfpjNUWV6a8LcKe6uNOmW22okucGHF6w0tXimenYUpAR6Tsze_NjbwMwIB7qFW2iDzeUanon7SVMQJ-S0Nfygpl9RRxqr7uuAYzZNsveF_64dB_kUj0OrE0g6jqOdNEXLsMp5Qb2oM7ufctnsHTYsFA2wXTdKkeQSJgS355wNp11zUxOuxQ",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4ODI2NDY3YWIwMWVlNDkyN2RmMzRkY2M5EgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "67af36ccad774e72b233192e854bf43b",
+      "title": "BazaarSathi Homepage with Hero Image",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 3488,
+      "localFiles": {
+        "screenshot": "screens/homepage-with-hero/screenshot.png",
+        "html": "screens/homepage-with-hero/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLuYWdL29P4Xz3qPkv0wUVW8RbOS6V_vJkIIwqkOXhdMbALN7EzLa_wOn3kaOIs5o9sM8urJ8F6JnnlWZ0woeSsK9jv0x6gq7k82i4is2gSmFkuFBX-Avr2_lTpwFjaV_bMTb7Y0MzorcBPTQyWTGhWoSM1gW-GIv20V0bikoMZD5fcG8hAtdUIk0_oi-mPdccsEawMIcPeH3ck-k-HHTe1NIrGhkF_H9nfz2A-3WYkD27vsWPdV60EKMp-z",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4OWQ1NDE3YjYwNzNhZGJmZThhMDY1YzMzEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "0fe50cb0499445e980638e2359c03a93",
+      "title": "BazaarSathi Login",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/login/screenshot.png",
+        "html": "screens/login/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLt6YSz3dS2hlNEzrdZUDT_WUjvXNeMH_6Ix3DrSWNFd4zvHtm5VlbBaiuZrA9WEuB91j7K0Pb5xSaDHWAJVSOMZ5YpRmpkSXVf6kR1CLVfhF4rZkx1dYSfauMtiTiyElzAoC35X2tlfh3enZQfcZ72lgue6NodPVmOUCpznOgnhUdrEFGyp6psYMYpFCAT0gGMubJhqAa1F5h7uQR1cLnrWXfvbgv5pFR0bwwEri8S7Otog03QNVSXO-VPx",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4MGU2MGU4NWEwOTI1ZDMxYzg4MjBkN2UzEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "ccca66848903442898daa3eb93a7da14",
+      "title": "BazaarSathi Logo",
+      "deviceType": null,
+      "width": 1024,
+      "height": 1024,
+      "localFiles": {
+        "screenshot": "screens/logo/screenshot.jpg",
+        "html": null
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLsVTtpNfLt1QEazoZ5R_aQ2sswT1ghGB-o3-jZUE-3M1pU7_BCIimPjivgGTF0K7lKCQuU0fQC7m3h0Szgc6P__R-mEDoPD8anTXX6Q8sMHtTFuCnMd6cuU2WzuyEcuiLIBZrSdEPGqp5RVNHBqaBHXDuY_pwDo-A4VfUjamw82o0qZV2QB41jXDcGpweCbsw3PKV_gDHGBYrWLiv4tf0-NTa7Ie1S183LSIL8ggyR3gb-Gw6qv4GsKj4w",
+        "html": null
+      }
+    },
+    {
+      "id": "81ddac89eb524f95b6eecc8da21f4da7",
+      "title": "BazaarSathi Messaging Inbox",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/messaging-inbox/screenshot.png",
+        "html": "screens/messaging-inbox/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLsh6ZhW9yGSCwup1vocMwUe_nUevWxflVTO9lSG3WBrauexZzE1s3IJgMeFldqipfOhT8duIA3mrP1EH4NuOVqA3tETHSl9MKQ_QMfEzC0XhXRihqi7IxNse1rN1ZXk-ZqdContJ6BypBxenGLFI5fPfEyRatKEomyrbkZFUC-bwnCI6N1nGw2ced8eCJzLfDOHgZAuSoC1dJ6pBTHV3JpD88oK-viMQJsm3mREv_-sL5JBV_nOc-q86Q_V",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4Nzc5OTk0ZTIwOTI1YzViZWRjMDJmMzEyEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "d57ec65f6b9e428f90d7eb7b58f79be4",
+      "title": "BazaarSathi Post Item",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 3902,
+      "localFiles": {
+        "screenshot": "screens/post-item/screenshot.png",
+        "html": "screens/post-item/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLsoJIsgiTvByail6bxEH6W3dubriuXiYp8pu9uqyJqNp3lzIV4rsveBIH7duDtbcdWcAMet_ZncHOS2ZdTvFcfBGKeuPk1rjnAERevItA50Fc1JWmnhDQNKiHz4UgDOoA9pWteEOPHbXSADD88r_H4hEoPZ4nuc2RGCpwt9O8ePadeJp4uEkhzutM4gmeda_lbiIYuQvcPloGhs-ygOVm904ClDRBFO4uHj_l7rfYQHpvBOiKwEmBPdUbDp",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4N2IyZjUzNjcwNzc5ODRlNzk3Mzc4Y2Q3EgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "4a1375d72b194c82a1f52e5ae3fd7433",
+      "title": "BazaarSathi Product Detail",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2836,
+      "localFiles": {
+        "screenshot": "screens/product-detail/screenshot.png",
+        "html": "screens/product-detail/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLuvMtf5CNTv3MDVH4z8VgnKQW_TVuTETD7S8rEHxm7M_fxhHQHovviEABG_yXHb6mkvGrRjhnYqGgXEd3rf6nKPKxxxJBLXkJKEZhwo_rBkmzNS15uE9S6pXR7lEmttIv-GPP8AiV4In3MuASJs1JgUGBtHman2rMYKhq46-UP5fWsMPhb-gaUag2XOkdTMsy69tPmhsLyx1FCflDQ85w-K7Pg54PjXrHWQLTFkWKuFimJ5ovh2hphe8OO2",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4MjJjODMzM2IwNzc5ODRlNzk3Mzc4Y2Q3EgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "2ff2078c070649e78d46ad566409a320",
+      "title": "BazaarSathi Register",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/register/screenshot.png",
+        "html": "screens/register/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLveEGiMQUFjis-IOimjuITVUz6R6-3OkspWXKdUz3KyohEE6Yk6SLK3kAr7x2n0OHfFkeyd_KAu3sOwT4OGxxXMHOadCa34mdwlQpeZ5IIdkm3xm5cyfWuxGC_LBuMHJfvRF_qIorQ2WwRxy7kd4dHtR_IteI7IxDqsrFsm0jh_KjyXIQfq41r2v2jGGyvGf6_Sd3cyOzhzKmqa2c_AthXSPgNzX1T1dPbAqn66LgjDzuWH0WPnO3hO4SxL",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4MGUzNDZlMjcwOTI1YzFkYzRiMDU0NTJjEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    },
+    {
+      "id": "68f803cfc8b3405d8a0b413985017901",
+      "title": "BazaarSathi Seller Dashboard",
+      "deviceType": "DESKTOP",
+      "width": 2560,
+      "height": 2048,
+      "localFiles": {
+        "screenshot": "screens/seller-dashboard/screenshot.png",
+        "html": "screens/seller-dashboard/index.html"
+      },
+      "sourceUrls": {
+        "screenshot": "https://lh3.googleusercontent.com/aida/AP1WRLuBEKJ0Pg-NRPMdEp-fBFzptm2kbzn9tGQU1ybET_JUNRn0aOS3uvAEOmUKYkmZIAz022khCikHYA07vNsl5Ajyyb7UREUkwsk3Z8QA2rsBaGE-fbdGwPsxQ4uEOZkIvwP5ZGJ87sTcweTWSXpT9Lcunlw5IlKm01-rw_lihnP4jGUERIqM7OpQxI3YNEZnQThPgRwVKNhxv4nyVx_lR2ktv8ZSm37vylQCwgS6YujcVXg0vpIP1_KXmplE",
+        "html": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1OGM4N2ViOTM1OGQwNzNhY2Q0NmVjMTIyN2YyEgsSBxDv0rKC8RMYAZIBJAoKcHJvamVjdF9pZBIWQhQxODAyODk3NTQxMjcwNDg3MTM3Ng&filename=&opi=89354086"
+      }
+    }
+  ]
+}
+

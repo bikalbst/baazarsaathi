@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Messages - BazaarSathi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f9f9ff",
+                        "surface-dim": "#d3daea",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "error": "#ba1a1a",
+                        "on-background": "#151c27",
+                        "inverse-primary": "#4edea3",
+                        "outline": "#6c7a71",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#002113",
+                        "primary-container": "#10b981",
+                        "on-primary-fixed-variant": "#005236",
+                        "primary": "#006c49",
+                        "surface": "#f9f9ff",
+                        "on-tertiary-fixed": "#410005",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#151c27",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-container-highest": "#dce2f3",
+                        "tertiary-container": "#fc7c78",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-container-high": "#e2e8f8",
+                        "surface-variant": "#dce2f3",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "on-tertiary-container": "#711419",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container-low": "#f0f3ff",
+                        "inverse-surface": "#2a313d",
+                        "surface-container": "#e7eefe",
+                        "on-primary-container": "#00422b",
+                        "secondary": "#855300",
+                        "on-surface-variant": "#3c4a42",
+                        "primary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#684000",
+                        "secondary-container": "#fea619",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2a1700",
+                        "on-error": "#ffffff",
+                        "tertiary": "#a43a3a",
+                        "outline-variant": "#bbcabf",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#006c49",
+                        "secondary-fixed": "#ffddb8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "2xl": "3rem",
+                        "xs": "0.25rem",
+                        "sm": "0.5rem",
+                        "xl": "2rem",
+                        "md": "1rem",
+                        "base": "4px",
+                        "gutter": "1.5rem",
+                        "lg": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface-container-lowest dark:bg-inverse-surface shadow-sm dark:border-b dark:border-outline-variant">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<a class="text-headline-md font-headline-md text-primary dark:text-primary-fixed-dim tracking-tight" href="#">BazaarSathi</a>
+</div>
+<div class="flex-1 flex justify-center max-w-lg mx-md hidden md:flex">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container outline-none transition-shadow text-body-md font-body-md" placeholder="Search items..." type="text"/>
+</div>
+</div>
+<nav class="flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 flex flex-col items-center gap-1 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span>Explore</span>
+</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 flex flex-col items-center gap-1 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Messages</span>
+</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 flex flex-col items-center gap-1 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>Profile</span>
+</a>
+</nav>
+<div class="flex items-center gap-md ml-lg">
+<button class="text-primary font-label-md text-label-md hover:underline hidden md:block">Login</button>
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add</span> Post Item
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Content: Inbox Split Pane -->
+<main class="flex-1 flex max-w-container-max mx-auto w-full p-md gap-md overflow-hidden" style="height: calc(100vh - 64px - 200px);">
+<!-- Left Panel: Conversations List -->
+<aside class="w-1/3 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col overflow-hidden hidden md:flex border border-surface-container-high">
+<div class="p-md border-b border-surface-container-high bg-surface-container-low flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-on-surface">Inbox</h2>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+<div class="overflow-y-auto flex-1 p-2 space-y-1">
+<!-- Active Conversation -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer border-l-4 border-primary">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a young professional woman with warm lighting, modern professional photography style, neutral soft background, smiling confidently. This aligns with the clean, bright, modern aesthetic of the BazaarSathi platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUuCm2d-Us-9cPL5SqfPVzTnN7RcLj0jNplSeuX5yKgVI5M6GncBNiH_xQPSWKJ1U4DzO-efqS_09e4F_8u7zCHO674iNz4EcqwO8BYpKb_enXRhLfwg65l7tkI5xEUCNrD54H_7jo8fIsGrzGdFZ86hiLgsEK_jLUq2R97kGCkZjxqhpK1XMpxlaGWMOE3sKfYUnJc0K_DfB7OMPwZHaqhWNcqa9ALdDBpfEuM5L83-IrkShthjrU5g"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-md text-label-md text-on-surface truncate">Sarah Jenkins</span>
+<span class="font-label-sm text-label-sm text-primary">10:42 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm truncate">Is the vintage camera still available? I can pick it up today.</p>
+</div>
+</div>
+<!-- Inactive Conversation 1 -->
+<div class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer border-l-4 border-transparent">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young man in casual attire, natural daylight, soft focus background, modern lifestyle photography, friendly expression. Consistent with the platform's approachable community vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2rWSd0Wf7zF1lK_7Df8HkYYibPul31Yy1BCKwEpPnf1uGgDEWaamaUaUfaFJdrj2ewW7pwCDYhiI8s_xOvlyNexInPQEgpHcnrkLJcpwQobZCMsmeMC31z54HtDQ4XQcSciC_k9Ca8pBuszXbediBQl2qckKrDJzLSGVxhNiETrclqazTtI8JMZxdUEjbqCRh2CSPD_66LxdiFD8s9NfqEJIsqkgk2fHKkAfhkDr8FX99o4KQ_4sxLg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-md text-label-md text-on-surface truncate">Mike Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm truncate">Thanks for the quick delivery! The monitor works perfectly.</p>
+</div>
+</div>
+<!-- Inactive Conversation 2 -->
+<div class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer border-l-4 border-transparent">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-variant">
+<div class="w-full h-full flex items-center justify-center bg-secondary-container text-on-secondary-container font-headline-md">
+                            AL
+                        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-md text-label-md text-on-surface truncate">Alex Rivera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 12</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm truncate">Would you take $50 for the acoustic guitar?</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Right Panel: Chat Area -->
+<section class="flex-1 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col overflow-hidden border border-surface-container-high">
+<!-- Chat Context Header -->
+<div class="p-md border-b border-surface-container-high flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-4">
+<!-- Mobile Back Button -->
+<button class="md:hidden text-on-surface-variant hover:text-primary transition-colors mr-2">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High quality product shot of a silver and black vintage film camera resting on a clean white surface. Soft studio lighting emphasizing the metallic textures and lens details. Modern, clean, e-commerce style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIaq3AdASqwiSrz0vEo68UPzEREoBkkRWaXKUttxJlZ-s6Ap5ZvMQsOnDSZP1z9_XgZazsM0TXxroQKxw7-QT-aSxO1gcD1p3hkBIrps2Qupk2F2Qlw3jI9Tnmru8-ahLgeCHgQBxWv3grjWVuYBVBD3ldGUGLmW5x4UtpKZuaQrBaSdQV3H9Mg5_l0RRGVyJ6J2lT05Y4kW08gsDcL7x17G6AhFEQYXLqvbCBUuXeqWw9Z4koNr0P4g"/>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface hover:text-primary cursor-pointer transition-colors">Vintage Canon AE-1 Film Camera</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-md text-label-md text-primary">$120</span>
+<span class="text-xs text-on-surface-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sell</span> Active Listing
+                            </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="More options">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Message Feed -->
+<div class="flex-1 overflow-y-auto p-lg flex flex-col gap-6 bg-surface-bright">
+<!-- Date Divider -->
+<div class="flex justify-center">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full">Today</span>
+</div>
+<!-- Received Message -->
+<div class="flex items-end gap-2 self-start max-w-[80%]">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-variant mb-1">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a young professional woman with warm lighting, modern professional photography style, neutral soft background, smiling confidently. This aligns with the clean, bright, modern aesthetic of the BazaarSathi platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9BA3UwClBqWJBL4GTCrPQF5APJdhgEVuZy4u1-zfM13yz81N7diSjWGq2iv5zhc9HkulGRCYANn6x8IO2ffwiClAgiL06HBpa9Cw1x5vfqAPjf2D_JSQM8MNACRGZTdqKPIIBVMWe9cOPnUJFMqQSCjCC0b7LBXYoiX5mN92JiGF2mJbEZ3JH0YaL3lHrk-FI1HMldWVyNS68JCYU2GBxJLLMS0_H6zcblcfgym95hHabXgclmv-6LA"/>
+</div>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container px-4 py-3 rounded-2xl rounded-bl-sm text-on-surface font-body-md text-body-md shadow-sm">
+                            Hi there! I saw your listing for the Canon AE-1. Is it still available?
+                        </div>
+<span class="text-xs text-on-surface-variant ml-1">10:40 AM</span>
+</div>
+</div>
+<!-- Sent Message -->
+<div class="flex items-end gap-2 self-end max-w-[80%]">
+<div class="flex flex-col gap-1 items-end">
+<div class="bg-primary text-on-primary px-4 py-3 rounded-2xl rounded-br-sm font-body-md text-body-md shadow-[0_4px_12px_rgba(16,185,129,0.2)]">
+                            Hello Sarah! Yes, it's still available and in great working condition. The light meter is accurate too.
+                        </div>
+<span class="text-xs text-on-surface-variant mr-1 flex items-center gap-1">
+                            10:41 AM <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</span>
+</div>
+</div>
+<!-- Received Message -->
+<div class="flex items-end gap-2 self-start max-w-[80%]">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-variant mb-1">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a young professional woman with warm lighting, modern professional photography style, neutral soft background, smiling confidently. This aligns with the clean, bright, modern aesthetic of the BazaarSathi platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF_NJ612qyOAKPPfl-vMI0Spdw6Rg5XPMK4Go2fYHRYjkmtZmctnuFFOMaa1R9sP3osPJ1i6Pt-HP5Kewpw9_E7frh_RxJVqEwZ0QlWym0UfB5ci3moAvaD324_vhRv80ogr8T8LzCL-VqYuswcC-kg2V8bKRhcsMGBRNl2QyR8Y-rmgFHavpeO2HKc4HnvXj_LoVsVQMvP5ZpklxLJ1-CyETqVCB6E5h0WBekfPmFUo96R0gE_MEhUg"/>
+</div>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container px-4 py-3 rounded-2xl rounded-bl-sm text-on-surface font-body-md text-body-md shadow-sm">
+                            That's great news. Does it come with any lenses besides the 50mm shown in the photos?
+                        </div>
+<div class="bg-surface-container px-4 py-3 rounded-2xl rounded-bl-sm text-on-surface font-body-md text-body-md shadow-sm mt-1">
+                            Is the vintage camera still available? I can pick it up today.
+                        </div>
+<span class="text-xs text-on-surface-variant ml-1">10:42 AM</span>
+</div>
+</div>
+<!-- Typing Indicator (Mock) -->
+<div class="flex items-center gap-2 self-start ml-10 text-on-surface-variant text-sm italic opacity-70">
+                    Sarah is typing...
+                </div>
+</div>
+<!-- Bottom Input Bar -->
+<div class="p-4 border-t border-surface-container-high bg-surface-container-lowest">
+<div class="flex items-end gap-3 bg-surface-container-low rounded-xl p-2 border border-surface-container-high focus-within:border-primary-container focus-within:ring-1 focus-within:ring-primary-container transition-all">
+<button class="w-10 h-10 flex-shrink-0 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-full transition-colors self-end">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<textarea class="flex-1 bg-transparent border-none focus:ring-0 resize-none font-body-md text-body-md py-2 px-1 max-h-32 text-on-surface placeholder:text-on-surface-variant/60" placeholder="Type a message..." rows="1" style="min-height: 40px;"></textarea>
+<button class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-primary-container text-on-primary-container hover:opacity-90 rounded-full transition-opacity shadow-sm self-end">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-2 px-2">
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> End-to-end encrypted
+                    </span>
+<button class="text-xs text-primary hover:underline font-label-sm">Use saved reply</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-high dark:bg-surface-container flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight font-bold">BazaarSathi</span>
+<p class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">© 2024 BazaarSathi. All rights reserved.</p>
+</div>
+<nav class="flex flex-wrap gap-x-lg gap-y-sm font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Help Center</a>
+</nav>
+</div>
+</footer>
+</body></html>

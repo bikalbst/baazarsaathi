@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BazaarSathi - Vintage Camera Listing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#151c27",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d3daea",
+                    "tertiary": "#a43a3a",
+                    "outline": "#6c7a71",
+                    "outline-variant": "#bbcabf",
+                    "surface-container": "#e7eefe",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "primary-fixed": "#6ffbbe",
+                    "surface-bright": "#f9f9ff",
+                    "primary": "#006c49",
+                    "surface": "#f9f9ff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002113",
+                    "inverse-primary": "#4edea3",
+                    "secondary": "#855300",
+                    "error": "#ba1a1a",
+                    "primary-container": "#10b981",
+                    "on-surface": "#151c27",
+                    "on-tertiary-fixed": "#410005",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffddb8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#711419",
+                    "surface-variant": "#dce2f3",
+                    "on-surface-variant": "#3c4a42",
+                    "secondary-container": "#fea619",
+                    "surface-container-high": "#e2e8f8",
+                    "primary-fixed-dim": "#4edea3",
+                    "on-tertiary-fixed-variant": "#842225",
+                    "on-secondary-container": "#684000",
+                    "surface-container-highest": "#dce2f3",
+                    "on-primary-container": "#00422b",
+                    "tertiary-fixed-dim": "#ffb3af",
+                    "tertiary-container": "#fc7c78",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#006c49",
+                    "on-secondary-fixed": "#2a1700",
+                    "inverse-surface": "#2a313d",
+                    "background": "#f9f9ff",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "0.5rem",
+                    "base": "4px",
+                    "md": "1rem",
+                    "2xl": "3rem",
+                    "gutter": "1.5rem",
+                    "container-max": "1280px",
+                    "lg": "1.5rem",
+                    "xl": "2rem",
+                    "xs": "0.25rem"
+            },
+            "fontFamily": {
+                    "display": [
+                            "Inter"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "label-sm": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Inter"
+                    ],
+                    "headline-lg-mobile": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "display": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface w-full sticky top-0 z-50 shadow-sm dark:border-b dark:border-outline-variant">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<a class="text-headline-md font-headline-md text-primary dark:text-primary-fixed-dim tracking-tight" href="#">BazaarSathi</a>
+</div>
+<div class="flex-1 max-w-md mx-md hidden md:block">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary-container font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant transition-shadow" placeholder="Search items..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<button class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-3 py-2 rounded-lg">Login</button>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary transition-colors duration-200 active:scale-95 shadow-sm hover:shadow-md">Post Item</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-xl">
+<!-- Breadcrumb -->
+<nav class="flex items-center text-on-surface-variant font-label-sm text-label-sm mb-lg gap-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Electronics</a>
+<span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Cameras</a>
+<span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-on-surface">Vintage Film Camera</span>
+</nav>
+<!-- Product Details Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl lg:gap-2xl mb-2xl">
+<!-- Left Column: Images -->
+<div class="flex flex-col gap-md">
+<div class="w-full aspect-square md:aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high relative group">
+<img alt="Vintage Film Camera Main Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A highly detailed close-up shot of a classic silver and black vintage film camera resting on a clean wooden table. The lighting is soft, diffused, and bright, highlighting the metallic textures and the intricate lens details. The aesthetic is clean, modern, and professional, perfectly suited for an upscale online marketplace listing in a bright, light-mode design context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0AespIyxe98b3B4zjhC_h_WIX5c7_N4mt41bu5opois6bXMwozPHvW2C4tZvuRwPwgpQFdH6lAWE95bquuPNY-Oq33v67kd9eKRklYkzSurekUoR7CT6lT8VvF-3n5MZRe5sAj39ZLl4rzUgi3TCtIvqPYQyPAy4tYPsbkb90_a6E468ScNkwZgaFnlDGHx9-Qv_Tza_uxz6D86A-1OQpOeaTSN4UsW5p2rk1-Yxxe7v1bo0WrLBjsA"/>
+</div>
+<div class="grid grid-cols-4 gap-sm">
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-primary-container relative">
+<img alt="Thumbnail 1" class="w-full h-full object-cover" data-alt="A sharp, well-lit photograph showing the top-down view of a vintage film camera. The dials, shutter button, and hot shoe are clearly visible against a pristine white background. The image is crisp, bright, and maintains a clean, modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmixzP1ek2bwWzwKQauRuNn2hDrS_9xXXen_EivOi4PHaN3Y-ujHdgzlEujwAR_WQZKoRFlNqR0n-f48dmB-ch6Jbzm2fPNMgn2Qnja8mZQ7gLRQuC5s6riBi4clWOCbNh9kBggco0YfEChI57lLa2I-pcrOuai6CgsJ5CNARoy3GFBVEzeTzPiuHMCwLl6OJM-NGY9nK5KMIrFJO-CdQj8UhwsLSqIHOM18kc8QNRg0C-8kPmVFfEWQ"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-surface-variant transition-colors relative">
+<img alt="Thumbnail 2" class="w-full h-full object-cover" data-alt="A detailed macro shot focusing on the lens of a classic vintage camera. The glass reflects soft studio lighting, showcasing the aperture ring and distance scale. The overall tone is bright, modern, and emphasizes high-quality product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhEs06Mpfbt4UNo-LPgDl0uBBU5yFPZxhyXwy6nGy9EuXRVR9a4TnopVRmb7NfmgpaxLsr5dS5XH8s6H8stV48KeScliphDOlX8jM2EuIva0A2ta7EjS2HVsjNq1_Fs__deJfemZ4LMAcbpuUywROOIRtdXkU9K115ql9d_M6aate6WSJxVhMAhV3McX277Dkyxmxl9slX2Bg87g2U40EtNUPkB_6ll4XkyWuYi89odDQ1kjk-RLaF6Q"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-surface-variant transition-colors relative">
+<img alt="Thumbnail 3" class="w-full h-full object-cover" data-alt="A clear photograph of the back of a vintage film camera, showing the viewfinder and film back. Shot against a clean, light-colored background with soft shadows, highlighting the condition of the leatherette material. Clean and professional style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBalFYsbV6tUdoaczUg7QY1zyrPJTtYjnLuyn4X6eKyzyKEyXEuwXpxEKtErK0CVa1RzDjGwevPeNN5cIN1SXHloZ8zjJy6yzhUUC5H-6UQEwFPtlw8_NIYDyrrCANg4-WvUI_26XY6hQ1c87JhwfQweLd8spk0gFZeS1xg4zMiRPy7yvnWMS8CZ3wGEFAI74ulPFP5bWkSCaTYkknpQuJWDyvLWKwprR8brXQHlC49Bqoqfknr7An2Ow"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-surface-variant transition-colors relative">
+<img alt="Thumbnail 4" class="w-full h-full object-cover" data-alt="An image showcasing the bottom plate of a vintage camera, revealing the tripod mount and battery compartment. The lighting is bright and even, removing harsh shadows to provide a clear, honest view of the product's condition in a modern marketplace setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOy6QD06bbp8R6oS-gShBHO_MHeHXcloStUe6doi-ClqfDnvhWuHvJ97BVmg6Jx4OYN--MVB7zHrzwdpxJS-Oa8ThvJa4pdxiPu1nRX4wt3IqmYT8O_3TkvMCp5HmvB4in2B26Bdw-QF6HF4EiTpSEHYARXvz0GuedEc9qsfmfFQfxTrvFkw_k12OrMrhKDAX4OcM3HV7sEsq-BfXBWSo-YiyZ9ib5ObJ3x0wR63Ux-MUJttxVqPXNyQ"/>
+</button>
+</div>
+</div>
+<!-- Right Column: Details -->
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h1 class="font-headline-lg md:font-headline-lg-mobile text-headline-lg md:text-headline-lg-mobile text-on-surface">Classic Vintage 35mm SLR Camera</h1>
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant active:scale-95">
+<span class="material-symbols-outlined" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="text-headline-md font-headline-md text-primary-container mb-md">$349.00</div>
+<div class="flex items-center gap-sm mb-lg">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-full">Like New</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> Posted 2 days ago
+                    </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 ml-auto">
+<span class="material-symbols-outlined text-[14px]" data-icon="location_on">location_on</span> Portland, OR
+                    </span>
+</div>
+<div class="mb-lg pb-lg border-b border-surface-variant">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Description</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Beautifully preserved vintage 35mm SLR camera from the early 80s. Fully mechanical, recently serviced, and ready to shoot. The light meter is accurate and new seals have been installed. Comes with a sharp 50mm f/1.8 prime lens, original leather strap, and a fresh battery. Perfect for both beginners looking to get into film photography or collectors wanting a pristine model. No fungus, haze, or scratches on the lens elements.
+                    </p>
+</div>
+<!-- Seller Profile Card -->
+<div class="bg-surface rounded-lg p-md mb-xl flex items-center justify-between border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="Seller Avatar" class="w-full h-full object-cover" data-alt="A friendly, professional headshot of a young woman with a warm smile, wearing a casual sweater. The background is a soft, blurred studio setting. The image is bright, well-lit, and perfectly suited for a trustworthy seller profile avatar on a modern marketplace platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgchK24YfE3riBuvtH0O-eY4Upw00qlPbqURlcx3PnhDU37TlfHdKvX84kXQJmm8sZfGaeo_qbnp248_n3k7fBFt6O2Bi7Yqsh2x7wM-yyiQh3ctZSiQ--0TBbzy9Db4pOXrLW24RXHSDyK9wrocBKhKkt3m_JDTW9R4hb4NYhGwZld_3QV6QGiChSVfI4sRvRJputnT51KCfbA03pexsPK04gGbNvW6RoxWmuCw3I6pclQH2WoyF9Mg"/>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+                                Sarah Jenkins 
+                                <span class="material-symbols-outlined text-primary-container text-[16px] bg-primary/10 rounded-full" data-icon="verified">verified</span>
+</div>
+<div class="flex items-center gap-sm mt-1">
+<div class="flex items-center text-secondary-container">
+<span class="material-symbols-outlined text-[14px]" data-icon="star" data-weight="fill">star</span>
+<span class="font-label-sm text-label-sm ml-1 text-on-surface-variant">4.8 (124 reviews)</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm border-l border-surface-variant pl-sm">Member since Jan 2022</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-md mt-auto">
+<button class="flex-1 bg-primary-container text-on-primary font-label-md text-label-md py-3 px-6 rounded-lg hover:bg-primary transition-colors shadow-sm hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span> Buy Now
+                    </button>
+<button class="flex-1 border-2 border-outline-variant text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg hover:border-on-surface transition-colors active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="chat_bubble_outline">chat_bubble_outline</span> Message Seller
+                    </button>
+</div>
+</div>
+</div>
+<!-- Similar Listings Section -->
+<section class="mt-2xl">
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface">Similar Listings</h2>
+<a class="text-primary font-label-md text-label-md hover:underline flex items-center" href="#">View all <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="flex overflow-x-auto gap-md pb-md hide-scrollbar snap-x snap-mandatory">
+<!-- Card 1 -->
+<a class="min-w-[240px] md:min-w-[280px] w-[240px] md:w-[280px] flex-shrink-0 bg-surface rounded-lg overflow-hidden group border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 snap-start" href="#">
+<div class="aspect-square bg-surface-container-high relative overflow-hidden">
+<img alt="Vintage Typewriter" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="A clean, bright product photograph of a black mechanical typewriter sitting on a wooden desk. Soft, natural light illuminates the keys and carriage. The image has a modern, minimalist aesthetic suitable for a high-end vintage marketplace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEN5h_fIOyXkFQwByPGyYP7HpFriG8WReNxMxIHHVVMoNEYTlODv8Ce-d8RIfCt3rDiC9b1Amchpr26LCmhgZH0U6B6h6kW3BYZOBIJGAN4hyEgtbvErA38d5CEyrlSeYEVQ5uVhLXrQGPLRTyWopvM36lQ1_ngYvMitmoIqEbCwL8v5rLdcKMt7hclE6j6pndrgf5g_ZcQyYbe_yATjq7x35SFkFU9EY6KcTBYo_j1uiy_w3hDttlQw"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-label-md text-on-surface truncate mb-1 group-hover:text-primary transition-colors">1960s Portable Typewriter</h3>
+<div class="font-label-md text-label-md text-primary-container mb-2">$120.00</div>
+<div class="flex items-center text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="location_on">location_on</span> Seattle, WA
+                        </div>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="min-w-[240px] md:min-w-[280px] w-[240px] md:w-[280px] flex-shrink-0 bg-surface rounded-lg overflow-hidden group border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 snap-start" href="#">
+<div class="aspect-square bg-surface-container-high relative overflow-hidden">
+<img alt="Leather Satchel" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="A high-quality image of a vintage leather satchel bag displayed on a clean, light-colored background. The worn leather texture is clearly visible under soft studio lighting, giving a premium yet rustic feel appropriate for a marketplace listing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LbuU6i6_6_MeuwBqjFNjGiX-l4xu_2mos08EdvoGovkUh_Yg-fd7k25LmFVWmsEWXbkojybXgJKlwxCf1Q6SQkkYgMa8bIqIW7oNnwL6xbLeSmp4RfCFnOwboHA87qp3QBsHGWNKFGjC6A_-BM25ohoBZgjdonazDPUC7o6AIiP7NmTH4vdp2S0iGoJexQf8OZ69dz_OqzLe1XHueC2JbFnNT4U2zV-rO8usCpwcKXNmvDSWpswVLA"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-label-md text-on-surface truncate mb-1 group-hover:text-primary transition-colors">Handcrafted Leather Satchel</h3>
+<div class="font-label-md text-label-md text-primary-container mb-2">$85.00</div>
+<div class="flex items-center text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="location_on">location_on</span> Austin, TX
+                        </div>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="min-w-[240px] md:min-w-[280px] w-[240px] md:w-[280px] flex-shrink-0 bg-surface rounded-lg overflow-hidden group border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 snap-start" href="#">
+<div class="aspect-square bg-surface-container-high relative overflow-hidden">
+<img alt="Analog Watch" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="A clear, professional shot of a classic analog watch with a brown leather strap resting on a white marble surface. The lighting is bright and crisp, highlighting the watch face details. The composition is clean and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh3OmNVT7c2Y_of9IrMgChBXzI_cIjyC0pxWkjM80s7GWzTUD94jtbmFRdD5B3TbTwMEL4Xx30TGo4aRiubHJFda8nYQ8WgjzPySsey-MV_Tid50jRWyFcfiZqXPK0iw4-LnhtaJ3OqXZV9gnQrHErAB-hyDgwhUmtcja9edGoA64Mfty-KUU8mdFdZXv5_zgEbyoKan7FtC_HEZm9FegHXPfwdB2QvA9MkD2J2cGFSZzSOApPAi9Tog"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-label-md text-on-surface truncate mb-1 group-hover:text-primary transition-colors">Classic Men's Analog Watch</h3>
+<div class="font-label-md text-label-md text-primary-container mb-2">$210.00</div>
+<div class="flex items-center text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="location_on">location_on</span> New York, NY
+                        </div>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="min-w-[240px] md:min-w-[280px] w-[240px] md:w-[280px] flex-shrink-0 bg-surface rounded-lg overflow-hidden group border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 snap-start" href="#">
+<div class="aspect-square bg-surface-container-high relative overflow-hidden">
+<img alt="Vinyl Record Player" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="A bright and airy photograph of a retro vinyl record player on a mid-century modern credenza. The lighting is natural and soft, creating a warm, inviting atmosphere suitable for a lifestyle product listing in a clean, modern design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuRRW3lsAWEZVI-t7qz-yVKOo0DAvXSsCynCvnjrCB--84FIPj7qcRbEiys1JU5dPfnWH79cDpLhuA7E-xm5TFBeEOjI8PbPuSTln9uRctYZD5bv9blXtm2elcLbLq_RmJlL69b0CHZttsN8n6BU4fD8-Ugk2wxLkPzKPVBYUOS4Of3iq0dkN3NRQx7pFHT4Vo1XTnRlRBmx5ApJlTBY9u42bv6nGtMWWj4vR8iMFADmvxup9vpMU4FQ"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-label-md text-on-surface truncate mb-1 group-hover:text-primary transition-colors">Retro Vinyl Record Player</h3>
+<div class="font-label-md text-label-md text-primary-container mb-2">$175.00</div>
+<div class="flex items-center text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="location_on">location_on</span> Chicago, IL
+                        </div>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-surface-container w-full mt-xl text-label-md font-label-md text-primary dark:text-primary-fixed-dim">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed-dim">BazaarSathi</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-2">© 2024 BazaarSathi. All rights reserved.</span>
+</div>
+<div class="flex flex-wrap gap-x-lg gap-y-sm">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

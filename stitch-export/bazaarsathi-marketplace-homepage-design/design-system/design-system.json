@@ -1,0 +1,142 @@
+{
+  "projectId": "18028975412704871376",
+  "requestedId": "asset-stub-assets_1d3705de7fc842b0a46867438c4628b5",
+  "designSystem": {
+    "displayName": "Vibrant Marketplace",
+    "styleGuidelines": "## Brand & Style\nThe design system is built on a foundation of **Modern Professionalism** infused with **Vibrant Energy**. It targets a diverse community of buyers and sellers who value ease of use, security, and a contemporary aesthetic. \n\nThe style utilizes a \"Clean & Tonal\" approach—combining the clarity of minimalism with the approachability of soft, rounded geometry. The visual narrative emphasizes transparency and growth, using a high-clarity white canvas to let product imagery and community interactions take center stage. The emotional response should be one of confidence, efficiency, and optimism.\n\n## Layout & Spacing\nThe layout follows a **Fluid Grid** model with a maximum container width to maintain readability on ultra-wide displays.\n\n- **Desktop (1280px+):** 12-column grid, 24px gutters, 40px margins.\n- **Tablet (768px - 1279px):** 8-column grid, 16px gutters, 24px margins.\n- **Mobile (Below 768px):** 4-column grid, 16px gutters, 16px margins.\n\nThe spacing rhythm is based on a 4px baseline. Use `lg` (24px) or `xl` (32px) for spacing between major sections to emphasize the \"generous whitespace\" brand pillar. Use `sm` (8px) for internal component spacing (e.g., icon to text).\n\n## Elevation & Depth\nDepth is conveyed through **Ambient Shadows** and **Tonal Layers** rather than harsh lines.\n\n- **Level 0 (Base):** Pure #FFFFFF background.\n- **Level 1 (Cards/Surface):** Use a very soft, diffused shadow: `0 4px 20px rgba(0, 0, 0, 0.05)`. This creates a lifted effect without feeling heavy.\n- **Level 2 (Interactive/Hover):** Increase shadow spread and slightly darken the shadow: `0 10px 30px rgba(0, 0, 0, 0.08)`.\n- **Level 3 (Modals/Overlays):** High-diffusion shadow: `0 20px 50px rgba(0, 0, 0, 0.12)`.\n\nAvoid solid black borders. Use a light neutral stroke (#F3F4F6) only when necessary to define boundaries on white-on-white surfaces.\n\n## Components\n- **Buttons:** Primary buttons use Emerald Green with white text. Action-oriented or promotional buttons use Vibrant Orange. All buttons feature a 0.5rem radius and a subtle lift on hover.\n- **Inputs:** Large, clear input fields with 16px internal padding. Focus states should use a 2px emerald ring.\n- **Cards:** Product cards must use the `rounded-lg` (1rem) radius. Apply a soft Level 1 shadow and no border. On hover, the card should transition to Level 2 elevation and the product image may scale slightly (1.02x).\n- **Chips/Badges:** Use \"Pill\" shapes (100px radius) with soft background tints of the primary/secondary colors (e.g., 10% opacity emerald with 100% opacity text).\n- **Lists:** Use generous vertical padding (16px) between list items, separated by a light #F3F4F6 divider.\n- **Marketplace Specifics:** \n    - **Price Tags:** Bold weights in Emerald Green. \n    - **Trust Badges:** Small icons with Emerald Green accents to reinforce security.\n    - **Category Icons:** Encapsulated in soft-colored circles (e.g., a light orange circle for \"Electronics\").",
+    "theme": {
+      "bodyFont": "INTER",
+      "bodyFontFamily": "Inter",
+      "colorMode": "LIGHT",
+      "colorVariant": "FIDELITY",
+      "customColor": "#10b981",
+      "designMd": "---\nname: Vibrant Marketplace\ncolors:\n  surface: '#f9f9ff'\n  surface-dim: '#d3daea'\n  surface-bright: '#f9f9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f0f3ff'\n  surface-container: '#e7eefe'\n  surface-container-high: '#e2e8f8'\n  surface-container-highest: '#dce2f3'\n  on-surface: '#151c27'\n  on-surface-variant: '#3c4a42'\n  inverse-surface: '#2a313d'\n  inverse-on-surface: '#ebf1ff'\n  outline: '#6c7a71'\n  outline-variant: '#bbcabf'\n  surface-tint: '#006c49'\n  primary: '#006c49'\n  on-primary: '#ffffff'\n  primary-container: '#10b981'\n  on-primary-container: '#00422b'\n  inverse-primary: '#4edea3'\n  secondary: '#855300'\n  on-secondary: '#ffffff'\n  secondary-container: '#fea619'\n  on-secondary-container: '#684000'\n  tertiary: '#a43a3a'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#fc7c78'\n  on-tertiary-container: '#711419'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#6ffbbe'\n  primary-fixed-dim: '#4edea3'\n  on-primary-fixed: '#002113'\n  on-primary-fixed-variant: '#005236'\n  secondary-fixed: '#ffddb8'\n  secondary-fixed-dim: '#ffb95f'\n  on-secondary-fixed: '#2a1700'\n  on-secondary-fixed-variant: '#653e00'\n  tertiary-fixed: '#ffdad7'\n  tertiary-fixed-dim: '#ffb3af'\n  on-tertiary-fixed: '#410005'\n  on-tertiary-fixed-variant: '#842225'\n  background: '#f9f9ff'\n  on-background: '#151c27'\n  surface-variant: '#dce2f3'\ntypography:\n  display:\n    fontFamily: Inter\n    fontSize: 48px\n    fontWeight: '800'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Inter\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 36px\n  headline-md:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.01em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 4px\n  xs: 0.25rem\n  sm: 0.5rem\n  md: 1rem\n  lg: 1.5rem\n  xl: 2rem\n  2xl: 3rem\n  container-max: 1280px\n  gutter: 1.5rem\n---\n\n## Brand & Style\nThe design system is built on a foundation of **Modern Professionalism** infused with **Vibrant Energy**. It targets a diverse community of buyers and sellers who value ease of use, security, and a contemporary aesthetic. \n\nThe style utilizes a \"Clean & Tonal\" approach—combining the clarity of minimalism with the approachability of soft, rounded geometry. The visual narrative emphasizes transparency and growth, using a high-clarity white canvas to let product imagery and community interactions take center stage. The emotional response should be one of confidence, efficiency, and optimism.\n\n## Colors\nThis design system employs a high-contrast palette against a sterile white background to ensure maximum legibility and brand recognition.\n\n- **Primary Emerald (#10B981):** Represents trust, stability, and growth. Used for primary actions, success states, and brand-critical touchpoints.\n- **Secondary Orange (#F59E0B):** Represents energy and urgency. Used sparingly for high-attention calls to action, price highlights, and promotional badges.\n- **Neutrals:** A scale of cool grays (from #111827 for text to #F9FAFB for subtle backgrounds) maintains a sophisticated, systematic feel.\n- **Semantic Colors:** Use emerald for success, orange for warnings, and standard red/blue for errors and info, ensuring they align with the primary palette's saturation levels.\n\n## Typography\nThe system uses **Inter** exclusively to achieve a systematic, neutral, and highly readable interface. \n\n- **Headlines:** Use tighter letter spacing and heavier weights (700-800) to create a strong visual anchor for marketplace categories and product titles.\n- **Body Text:** Standard weight (400) with generous line heights (1.5x) to ensure descriptions and reviews remain legible during long browsing sessions.\n- **Labels:** Used for metadata, tags, and navigation elements. These should often use a medium or semi-bold weight to distinguish them from body copy.\n\n## Layout & Spacing\nThe layout follows a **Fluid Grid** model with a maximum container width to maintain readability on ultra-wide displays.\n\n- **Desktop (1280px+):** 12-column grid, 24px gutters, 40px margins.\n- **Tablet (768px - 1279px):** 8-column grid, 16px gutters, 24px margins.\n- **Mobile (Below 768px):** 4-column grid, 16px gutters, 16px margins.\n\nThe spacing rhythm is based on a 4px baseline. Use `lg` (24px) or `xl` (32px) for spacing between major sections to emphasize the \"generous whitespace\" brand pillar. Use `sm` (8px) for internal component spacing (e.g., icon to text).\n\n## Elevation & Depth\nDepth is conveyed through **Ambient Shadows** and **Tonal Layers** rather than harsh lines.\n\n- **Level 0 (Base):** Pure #FFFFFF background.\n- **Level 1 (Cards/Surface):** Use a very soft, diffused shadow: `0 4px 20px rgba(0, 0, 0, 0.05)`. This creates a lifted effect without feeling heavy.\n- **Level 2 (Interactive/Hover):** Increase shadow spread and slightly darken the shadow: `0 10px 30px rgba(0, 0, 0, 0.08)`.\n- **Level 3 (Modals/Overlays):** High-diffusion shadow: `0 20px 50px rgba(0, 0, 0, 0.12)`.\n\nAvoid solid black borders. Use a light neutral stroke (#F3F4F6) only when necessary to define boundaries on white-on-white surfaces.\n\n## Shapes\nThe shape language is defined by a friendly, **Rounded** aesthetic. \n\n- **Components (Buttons, Inputs):** 0.5rem (8px) base radius.\n- **Containers (Cards, Product Tiles):** 1rem (16px) for standard cards; use 1.5rem (24px) for featured hero sections.\n- **Interactive Elements:** Buttons should feel tactile and approachable; avoid sharp 90-degree angles entirely to maintain the \"community-focused\" feel.\n\n## Components\n- **Buttons:** Primary buttons use Emerald Green with white text. Action-oriented or promotional buttons use Vibrant Orange. All buttons feature a 0.5rem radius and a subtle lift on hover.\n- **Inputs:** Large, clear input fields with 16px internal padding. Focus states should use a 2px emerald ring.\n- **Cards:** Product cards must use the `rounded-lg` (1rem) radius. Apply a soft Level 1 shadow and no border. On hover, the card should transition to Level 2 elevation and the product image may scale slightly (1.02x).\n- **Chips/Badges:** Use \"Pill\" shapes (100px radius) with soft background tints of the primary/secondary colors (e.g., 10% opacity emerald with 100% opacity text).\n- **Lists:** Use generous vertical padding (16px) between list items, separated by a light #F3F4F6 divider.\n- **Marketplace Specifics:** \n    - **Price Tags:** Bold weights in Emerald Green. \n    - **Trust Badges:** Small icons with Emerald Green accents to reinforce security.\n    - **Category Icons:** Encapsulated in soft-colored circles (e.g., a light orange circle for \"Electronics\").",
+      "font": "INTER",
+      "headlineFont": "INTER",
+      "headlineFontFamily": "Inter",
+      "labelFont": "INTER",
+      "labelFontFamily": "Inter",
+      "namedColors": {
+        "background": "#f9f9ff",
+        "error": "#ba1a1a",
+        "error_container": "#ffdad6",
+        "inverse_on_surface": "#ebf1ff",
+        "inverse_primary": "#4edea3",
+        "inverse_surface": "#2a313d",
+        "on_background": "#151c27",
+        "on_error": "#ffffff",
+        "on_error_container": "#93000a",
+        "on_primary": "#ffffff",
+        "on_primary_container": "#00422b",
+        "on_primary_fixed": "#002113",
+        "on_primary_fixed_variant": "#005236",
+        "on_secondary": "#ffffff",
+        "on_secondary_container": "#684000",
+        "on_secondary_fixed": "#2a1700",
+        "on_secondary_fixed_variant": "#653e00",
+        "on_surface": "#151c27",
+        "on_surface_variant": "#3c4a42",
+        "on_tertiary": "#ffffff",
+        "on_tertiary_container": "#711419",
+        "on_tertiary_fixed": "#410005",
+        "on_tertiary_fixed_variant": "#842225",
+        "outline": "#6c7a71",
+        "outline_variant": "#bbcabf",
+        "primary": "#006c49",
+        "primary_container": "#10b981",
+        "primary_fixed": "#6ffbbe",
+        "primary_fixed_dim": "#4edea3",
+        "secondary": "#855300",
+        "secondary_container": "#fea619",
+        "secondary_fixed": "#ffddb8",
+        "secondary_fixed_dim": "#ffb95f",
+        "surface": "#f9f9ff",
+        "surface_bright": "#f9f9ff",
+        "surface_container": "#e7eefe",
+        "surface_container_high": "#e2e8f8",
+        "surface_container_highest": "#dce2f3",
+        "surface_container_low": "#f0f3ff",
+        "surface_container_lowest": "#ffffff",
+        "surface_dim": "#d3daea",
+        "surface_tint": "#006c49",
+        "surface_variant": "#dce2f3",
+        "tertiary": "#a43a3a",
+        "tertiary_container": "#fc7c78",
+        "tertiary_fixed": "#ffdad7",
+        "tertiary_fixed_dim": "#ffb3af"
+      },
+      "overrideNeutralColor": "#6b7280",
+      "overridePrimaryColor": "#10b981",
+      "overrideSecondaryColor": "#f59e0b",
+      "roundness": "ROUND_EIGHT",
+      "spacing": {
+        "2xl": "3rem",
+        "base": "4px",
+        "container-max": "1280px",
+        "gutter": "1.5rem",
+        "lg": "1.5rem",
+        "md": "1rem",
+        "sm": "0.5rem",
+        "xl": "2rem",
+        "xs": "0.25rem"
+      },
+      "spacingScale": 2,
+      "typography": {
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "28px"
+        },
+        "body-md": {
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px"
+        },
+        "display": {
+          "fontFamily": "Inter",
+          "fontSize": "48px",
+          "fontWeight": "800",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "56px"
+        },
+        "headline-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "letterSpacing": "-0.01em",
+          "lineHeight": "40px"
+        },
+        "headline-lg-mobile": {
+          "fontFamily": "Inter",
+          "fontSize": "28px",
+          "fontWeight": "700",
+          "lineHeight": "36px"
+        },
+        "headline-md": {
+          "fontFamily": "Inter",
+          "fontSize": "24px",
+          "fontWeight": "600",
+          "lineHeight": "32px"
+        },
+        "label-md": {
+          "fontFamily": "Inter",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "letterSpacing": "0.01em",
+          "lineHeight": "20px"
+        },
+        "label-sm": {
+          "fontFamily": "Inter",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "lineHeight": "16px"
+        }
+      }
+    }
+  },
+  "name": "assets/1d3705de7fc842b0a46867438c4628b5",
+  "version": "1"
+}
+

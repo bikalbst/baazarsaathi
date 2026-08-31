@@ -1,0 +1,25 @@
+{
+  "name": "baazarsaathi-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BazaarSathi marketplace API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check models/User.js && node --check models/Listing.js && node --check models/Order.js && node --check models/AdminSetting.js && node --check models/Conversation.js && node --check models/Message.js && node --check controllers/authController.js && node --check controllers/listingController.js && node --check controllers/orderController.js && node --check controllers/chatController.js && node --check services/khaltiService.js && node --check services/escrowService.js && node --check socket/socketServer.js && node --check middleware/authMiddleware.js && node --check routes/authRoutes.js && node --check routes/listingRoutes.js && node --check routes/orderRoutes.js && node --check routes/chatRoutes.js",
+    "test": "node --test --test-isolation=none tests/*.test.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.1",
+    "socket.io": "^4.8.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

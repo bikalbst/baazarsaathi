@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BazaarSathi - Modern Community Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#dce2f3",
+                      "surface-tint": "#006c49",
+                      "surface-container-high": "#e2e8f8",
+                      "primary": "#006c49",
+                      "on-surface-variant": "#3c4a42",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb3af",
+                      "tertiary": "#a43a3a",
+                      "on-tertiary-container": "#711419",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-bright": "#f9f9ff",
+                      "surface-container-highest": "#dce2f3",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "on-tertiary-fixed": "#410005",
+                      "error-container": "#ffdad6",
+                      "inverse-surface": "#2a313d",
+                      "on-error-container": "#93000a",
+                      "on-background": "#151c27",
+                      "surface-container": "#e7eefe",
+                      "secondary": "#855300",
+                      "surface-dim": "#d3daea",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#6ffbbe",
+                      "on-tertiary-fixed-variant": "#842225",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "outline-variant": "#bbcabf",
+                      "secondary-fixed": "#ffddb8",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#fea619",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed": "#ffdad7",
+                      "surface": "#f9f9ff",
+                      "error": "#ba1a1a",
+                      "on-surface": "#151c27",
+                      "inverse-primary": "#4edea3",
+                      "background": "#f9f9ff",
+                      "outline": "#6c7a71",
+                      "on-secondary-fixed": "#2a1700",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#684000",
+                      "surface-container-low": "#f0f3ff",
+                      "on-primary-container": "#00422b",
+                      "on-primary-fixed": "#002113",
+                      "primary-container": "#10b981",
+                      "primary-fixed-dim": "#4edea3",
+                      "tertiary-container": "#fc7c78",
+                      "on-primary-fixed-variant": "#005236"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "2rem",
+                      "md": "1rem",
+                      "gutter": "1.5rem",
+                      "container-max": "1280px",
+                      "2xl": "3rem",
+                      "xs": "0.25rem",
+                      "lg": "1.5rem",
+                      "sm": "0.5rem",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "display": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<nav class="bg-surface-container-lowest text-primary font-body-md text-body-md w-full sticky top-0 z-50 shadow-sm transition-transform flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="BazaarSathi Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPvFLaqvVYsCr2X1vXXuqs3SOX-5LcDlBG2EALu_XRmXyVb3OCLQ34SmT7q0dWuXeYcAL4tqgRvWGG5MN7r2daoQg50jWs8Xr7c6RK9Bs51wzsgY_4tUCuRK41YBOauJuYO1NZvVz-X1FxfeDzeWrRpXiVLpRFagkgcPk4xANmoDeQcEdoOMkeYJinSE_Zbdgo2cH47nfq2ilfrP_SLNK4UgrHj_J1B0dP9t6EWXoLlbcnobfOqsQl8w"/>
+<span class="text-headline-md font-headline-md tracking-tight">BazaarSathi</span>
+</div>
+<div class="flex items-center bg-surface-container-high rounded-full px-4 py-2 hidden md:flex w-1/3">
+<span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
+<input class="bg-transparent border-none outline-none w-full text-on-surface focus:ring-0" placeholder="Search items..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md">Login</button>
+<button class="bg-secondary-container text-on-secondary-container font-label-md px-6 py-2 rounded-lg hover:bg-opacity-90 transition-opacity">Post Item</button>
+</div>
+</nav>
+<main class="w-full">
+<section class="bg-surface-container-lowest py-2xl px-gutter relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh] text-center border-b border-surface-variant" style="background-image: linear-gradient(rgba(249, 249, 255, 0.85), rgba(249, 249, 255, 0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-SGArNsLGd-qxLt0hTuJakfb3YydjtKsTsPVTZCmMQBP_kn4OjWn8h-i5JFTLQ919cTarfyF1SjPdehLHNVuuRAfTgUJGRVWw4Gv09l_GTDPhrIBHGNeXMJeq8NBK3PqaF4jDlnqu64qwkER10ZmTc8Dp7w5aXG38cNsPwhuJMr0-u4DKYE_O113gcTot8vKwNA8onOd4AcPEHRltdZLIh5q5SV6eASiyTxkRlwFIQkcu0rng_waQ7A'); background-size: cover; background-position: center;">
+<div class="max-w-container-max mx-auto relative z-10 w-full">
+<h1 class="text-display font-display text-on-surface mb-md">Find what you need, locally.</h1>
+<p class="text-headline-lg font-headline-lg text-on-surface-variant mb-xl">Trusted community marketplace.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-sm w-full max-w-3xl mx-auto">
+<div class="relative w-full md:w-1/3">
+<select class="w-full appearance-none bg-surface-container-high border-none rounded-lg px-4 py-4 text-on-surface focus:ring-2 focus:ring-primary-container font-body-md">
+<option>Select Category</option>
+<option>Electronics</option>
+<option>Home &amp; Garden</option>
+<option>Vehicles</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative w-full md:w-1/2">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-high border-none rounded-lg pl-12 pr-4 py-4 text-on-surface focus:ring-2 focus:ring-primary-container font-body-md" placeholder="Search for anything..." type="text"/>
+</div>
+<button class="w-full md:w-auto bg-secondary-container text-on-secondary-container font-label-md px-8 py-4 rounded-lg hover:bg-opacity-90 transition-opacity">Search</button>
+</div>
+</div>
+</section>
+<section class="py-2xl px-gutter max-w-container-max mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-lg text-center">Browse by Category</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-md">
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">devices</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Electronics</span>
+</a>
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chair</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Home &amp; Garden</span>
+</a>
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary-container mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Vehicles</span>
+</a>
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/30 flex items-center justify-center text-primary-fixed-variant mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">apparel</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Fashion</span>
+</a>
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/30 flex items-center justify-center text-secondary-fixed-variant mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handyman</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Services</span>
+</a>
+<a class="flex flex-col items-center p-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="#">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed/30 flex items-center justify-center text-tertiary-fixed-variant mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+</div>
+<span class="font-label-md text-on-surface group-hover:text-primary transition-colors">Hobbies</span>
+</a>
+</div>
+</section>
+<section class="py-xl px-gutter max-w-container-max mx-auto bg-surface-container-low rounded-2xl mb-2xl">
+<div class="flex justify-between items-end mb-lg">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Featured Listings</h2>
+<a class="text-primary font-label-md hover:underline flex items-center gap-xs" href="#">View all <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer border border-transparent hover:border-surface-variant flex flex-col">
+<div class="aspect-[4/3] w-full bg-surface-variant overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pristine, modern MacBook Pro 14 inch resting on a minimalist white desk with soft natural light streaming in from a nearby window, high clarity, realistic product photography aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk5McrBXaGxvLKYqihNGKMsNweSj-NvkWOerfl8NvuDme28qV5ohsLrlH_iGqp95O8x6liOXRmsJYDLWEJNdscXbSl1wKrPkBSRw2-rWaEcxiqxStaN-Jm5YwpKUWPy-IEFmb5dz3xBRjc8cIuoPjwKYjUJHJ_30mcI6shNbtK7JvWp6bOIXcjJ5bjBJQd8pfsAofDZrdOiLOHQcdkN34m7DEQgf3fvvg63porI7qSEcS5mvtavOyCVQ"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur rounded-full p-2 text-on-surface-variant hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="text-headline-md font-headline-md text-on-surface line-clamp-1">MacBook Pro 14"</h3>
+<span class="text-headline-md font-headline-md text-primary-container">$1,200</span>
+</div>
+<div class="flex items-center gap-sm mt-auto pt-md border-t border-surface-variant">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A small, professional circular avatar portrait of a friendly young man with short brown hair against a neutral gray background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB46PYJLf7K1SgFIn67t9O7LPpBoxzrOEtu4CEdLDHFU-1175nv2NHQNbkEtnHyOPiS6qJaAVBJ6ZdXtWB9VOvqR9GLg1UJ12ScNVgYjrtL3MX6AgFY2YErVjyxexYP7QnGaH2GQyUYX3eZ_yEMx6zwN1zfJy3RFPjJmy8GM4lc3y3DgKRIdISA29zbebfKUhLKcYhCDBJpW-2JFQMr927s8cQlEhFkKILH2X_VmBqhtfDg9FSuZrjSNA"/>
+<span class="text-label-md font-label-md text-on-surface flex-1 truncate">Alex J.</span>
+<div class="flex items-center gap-xs text-on-surface-variant text-label-sm font-label-sm bg-surface-variant/50 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                San Francisco, CA
+                            </div>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer border border-transparent hover:border-surface-variant flex flex-col">
+<div class="aspect-[4/3] w-full bg-surface-variant overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully worn vintage leather couch in a rich caramel brown color, placed in an industrial style loft with exposed brick walls and warm, inviting indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyRc_S8ETuduyKd9ePIMly0MPZdtXfYpvx64Zv8eABoJD2HIIYkhDCdAqBZhLItoJe38AkoK5raabIb1oPxLVxws8TUP6EJpjV7EPPSuqsZFtWQD1uNwjeThMnF1BQi-fQg6fhfftZ_CHgW-15sFUFyBcke6h2EuTA3TQB96emw2mxJm1RnpG4ZGOCJotW9DWVM7iMCx2shtjeFxgY8inWIDkdp3WlcYuXErZr8ndRfcvvu8sKvO_ucw"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur rounded-full p-2 text-on-surface-variant hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="text-headline-md font-headline-md text-on-surface line-clamp-1">Vintage Leather Couch</h3>
+<span class="text-headline-md font-headline-md text-primary-container">$850</span>
+</div>
+<div class="flex items-center gap-sm mt-auto pt-md border-t border-surface-variant">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A small, bright circular avatar portrait of a smiling woman with glasses and curly dark hair in a well-lit outdoor setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWM_Op0kcPoCJU22D3WGqOp2XVrZD0GaYL9nG4xbcXn1ZCeGgQ1j58MZr9sQUzwWUtLlteFuu9q88fT2Tj8U3P_kWNXRTYVSlNzF2-KT40YQdtqZZV6D9wqdjcaSBnFGtzThpCtUDqoB5f7Q-v1vSLRAf1QxRBK8QE70RHhwQyglauz-CaBNeCTwY2BWUYpOu_Jr5pBv2w3PkVQuKbSf8yI-eOB6ZeXoMWWgNMOJTeZLjfXoWGeChc7A"/>
+<span class="text-label-md font-label-md text-on-surface flex-1 truncate">Sarah M.</span>
+<div class="flex items-center gap-xs text-on-surface-variant text-label-sm font-label-sm bg-surface-variant/50 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Oakland, CA
+                            </div>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer border border-transparent hover:border-surface-variant flex flex-col">
+<div class="aspect-[4/3] w-full bg-surface-variant overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek black mountain bike leaning against a white brick wall outdoors, sharp focus, vibrant daylight highlighting the metallic details of the bike frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNKnekAVxfukMamCkaEL3KsxmWg1rQTQKHVO749lHMz8UCM4TkHuD_i6vrr53jEqPknpTjxKuJCxWMIRD_B64pTx__aTYEjCRUPWLMEME177e3kGQfibFm0XJFwUoOyFpp0oJGdTR2PfxGlUj3q5rOQKjXm-OTvKm850hUlAkHkQ6t7lq1vrxd4VFe71wjlx9YiCKjqYDgkiDyWJvnITkPxlncLoFAGLilah6kvy3Z8mMuon6p_Er04w"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur rounded-full p-2 text-on-surface-variant hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="text-headline-md font-headline-md text-on-surface line-clamp-1">Trek Mountain Bike</h3>
+<span class="text-headline-md font-headline-md text-primary-container">$450</span>
+</div>
+<div class="flex items-center gap-sm mt-auto pt-md border-t border-surface-variant">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A simple, abstract circular avatar featuring a geometric pattern in shades of emerald green and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo146wdRMholWFIAoCkNrsCTrHWOhlLs3aFyVRER_fY5EiIkr4XkknunMwo78jAowLLaYmgO5QeCQzHpEwyhdRhxtZ_oOUweNjk5jHQ494h_-XslYa2zTqB_3EKEbxP2W1_PFHzn9bGfB9mL39cAoc2O33QU-7CEbZQtVtQqoD2mbfePScPFVt428PD2v3Cdy5F4mt_j9z3hUW3mB3oQ11tTavuDGoN007gowopFi_p5E-SGRc132Qvg"/>
+<span class="text-label-md font-label-md text-on-surface flex-1 truncate">BikeHub Shop</span>
+<div class="flex items-center gap-xs text-on-surface-variant text-label-sm font-label-sm bg-surface-variant/50 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+                                Berkeley, CA
+                            </div>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-high text-primary font-label-md text-label-md w-full mt-xl flex flex-col md:flex-row justify-between items-start gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="text-headline-sm font-headline-sm text-primary">BazaarSathi</span>
+<p class="text-on-surface-variant mt-2 max-w-xs font-body-sm">Your trusted local marketplace for buying and selling everyday items.</p>
+<p class="text-on-surface-variant mt-4">© 2024 BazaarSathi. All rights reserved.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-xl w-full md:w-auto">
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-on-surface mb-2 font-bold">Company</h4>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">About Us</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Careers</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-on-surface mb-2 font-bold">Legal</h4>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-on-surface mb-2 font-bold">Support</h4>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

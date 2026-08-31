@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seller Dashboard - BazaarSathi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bbcabf",
+                        "surface-container-high": "#e2e8f8",
+                        "surface-container-low": "#f0f3ff",
+                        "on-surface": "#151c27",
+                        "surface": "#f9f9ff",
+                        "tertiary": "#a43a3a",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-tint": "#006c49",
+                        "surface-dim": "#d3daea",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffddb8",
+                        "secondary": "#855300",
+                        "on-background": "#151c27",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#dce2f3",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-secondary-container": "#684000",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container": "#e7eefe",
+                        "surface-bright": "#f9f9ff",
+                        "outline": "#6c7a71",
+                        "surface-variant": "#dce2f3",
+                        "on-tertiary-fixed": "#410005",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2a313d",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "primary": "#006c49",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "primary-container": "#10b981",
+                        "on-primary-fixed-variant": "#005236",
+                        "background": "#f9f9ff",
+                        "on-primary-fixed": "#002113",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "primary-fixed": "#6ffbbe",
+                        "on-tertiary-container": "#711419",
+                        "inverse-primary": "#4edea3",
+                        "on-secondary-fixed": "#2a1700",
+                        "on-primary-container": "#00422b",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#fc7c78",
+                        "secondary-container": "#fea619",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#3c4a42"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "2rem",
+                        "lg": "1.5rem",
+                        "xs": "0.25rem",
+                        "base": "4px",
+                        "gutter": "1.5rem",
+                        "sm": "0.5rem",
+                        "md": "1rem",
+                        "container-max": "1280px",
+                        "2xl": "3rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "display": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface-container-lowest shadow-sm">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<a class="text-headline-md font-headline-md text-primary tracking-tight" href="#">BazaarSathi</a>
+</div>
+<div class="flex-1 max-w-md mx-auto hidden md:block">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container font-body-md text-body-md transition-shadow" placeholder="Search BazaarSathi..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden md:flex text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md text-label-md items-center gap-xs">
+                    Login
+                </button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all active:scale-95 flex items-center gap-xs">
+                    Post Item
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Dashboard Layout -->
+<div class="flex-1 flex max-w-container-max mx-auto w-full px-gutter py-lg gap-xl">
+<!-- Left Sidebar Navigation -->
+<aside class="hidden md:flex flex-col w-64 flex-shrink-0 gap-sm">
+<nav class="flex flex-col gap-xs bg-surface-container-lowest p-md rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-primary bg-surface-container font-label-md text-label-md transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+                    Overview
+                </a>
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                    My Listings
+                </a>
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+                    Orders
+                </a>
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+                    Earnings
+                </a>
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">chat</span>
+                    Messages
+                </a>
+<a class="flex items-center gap-sm px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors duration-200 font-label-md text-label-md mt-lg pt-lg border-t border-surface-dim" href="#">
+<span class="material-symbols-outlined">person</span>
+                    Profile
+                </a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col gap-lg min-w-0">
+<header class="flex justify-between items-end">
+<h1 class="font-headline-lg text-headline-lg text-on-surface hidden md:block">Seller Dashboard</h1>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface md:hidden">Seller Dashboard</h1>
+</header>
+<!-- Stat Cards Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-shadow flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Earned</span>
+<span class="material-symbols-outlined text-primary-container bg-primary-container/10 p-1 rounded-full text-sm">account_balance_wallet</span>
+</div>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">NPR 45,200</span>
+</div>
+<div class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+12% this month</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-shadow flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-md text-label-md text-on-surface-variant">Pending Payout</span>
+<span class="material-symbols-outlined text-secondary-container bg-secondary-container/10 p-1 rounded-full text-sm">schedule</span>
+</div>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">NPR 12,850</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm mt-auto">
+                        Expected transfer: Tomorrow
+                    </div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-shadow flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-md text-label-md text-on-surface-variant">Active Listings</span>
+<span class="material-symbols-outlined text-primary-container bg-primary-container/10 p-1 rounded-full text-sm">inventory_2</span>
+</div>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">14</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm mt-auto">
+                        3 views in last hour
+                    </div>
+</div>
+</div>
+<!-- My Listings Table Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col">
+<div class="px-lg py-md border-b border-surface-dim flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-on-surface">My Listings</h2>
+<button class="text-primary font-label-md text-label-md hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface border-b border-surface-dim text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="px-lg py-sm font-medium">Item</th>
+<th class="px-lg py-sm font-medium">Price (NPR)</th>
+<th class="px-lg py-sm font-medium">Status</th>
+<th class="px-lg py-sm font-medium hidden sm:table-cell">Views</th>
+<th class="px-lg py-sm font-medium hidden md:table-cell">Date Posted</th>
+<th class="px-lg py-sm font-medium text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-dim font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-lg py-sm">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="A detailed close-up shot of a well-maintained vintage Canon AE-1 camera sitting on a clean white desk, bathed in soft, natural daylight. The silver body and black leatherette texture are clearly visible, conveying a sense of quality and nostalgia. The overall mood is bright, modern, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVFRECwT3nVEbrFTRRJQcvXQ-pM-m7ExxAgVRZCAIa9nq3DsSi_NQkXhvAb1xdmq21O7QwJEimJAaJ-YkWbWyxtSqTbWRxVY8DDsGLvuV1pIqeyu4w87D05NCPfB-0zmMWD8y0hsx6G4AueOFXK94vFB4Whv8gGcCP_Somov5WEg6NSUCPm4lTME-ShhM5eogMqFrasAGzvnbAbZhi-lF7gq2Ah7O7DMARkA0sfqiqGaQkAGZQDmHJsQ"/>
+</div>
+<span class="font-medium text-on-surface line-clamp-1">Vintage Canon AE-1</span>
+</div>
+</td>
+<td class="px-lg py-sm font-semibold text-primary">18,500</td>
+<td class="px-lg py-sm">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container/10 text-primary-container font-label-sm text-label-sm whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-primary-container mr-1"></span> Active
+                                    </span>
+</td>
+<td class="px-lg py-sm text-on-surface-variant hidden sm:table-cell">142</td>
+<td class="px-lg py-sm text-on-surface-variant hidden md:table-cell">Oct 24, 2023</td>
+<td class="px-lg py-sm text-right">
+<div class="flex justify-end gap-sm text-outline">
+<button class="hover:text-primary transition-colors p-1" title="Edit"><span class="material-symbols-outlined text-[20px]">edit</span></button>
+<button class="hover:text-error transition-colors p-1" title="Delete"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-lg py-sm">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="A modern, ergonomic black mesh desk chair placed in a brightly lit, minimalist office setting with white walls and a light wood floor. The chair looks comfortable and functional, highlighting its design features. The lighting is soft and even, creating a clean, professional product shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB2uEFffCPwpi78g9-V_h3ei8knr2ExDrrxOmqKGJeT7niTtTISd9ADopJCEBm33voUIrljfe9gI2LucuBZFf6XjcQ3CIuWvzllmAT_AwFVmUb8TS2sy3w6KIX9PD828z6UgLcQkkGJagsJA87w3ND2cOoW3TZ6aUIOBAscxJborW1Caa2ZcNblfyznv0kD7AeI4KnV2rmjgsd7_FV0rsF2xlWQZCQLL6RVHhy0k2M0BSr9s-sUT86UQ"/>
+</div>
+<span class="font-medium text-on-surface line-clamp-1">Ergonomic Desk Chair</span>
+</div>
+</td>
+<td class="px-lg py-sm font-semibold text-on-surface">8,200</td>
+<td class="px-lg py-sm">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">
+                                        Sold
+                                    </span>
+</td>
+<td class="px-lg py-sm text-on-surface-variant hidden sm:table-cell">89</td>
+<td class="px-lg py-sm text-on-surface-variant hidden md:table-cell">Oct 15, 2023</td>
+<td class="px-lg py-sm text-right">
+<div class="flex justify-end gap-sm text-outline">
+<button class="hover:text-primary transition-colors p-1" title="View"><span class="material-symbols-outlined text-[20px]">visibility</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-lg py-sm">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Two beautiful, earthy-toned handmade ceramic mugs resting on a light marble countertop. The mugs have a subtle glaze and organic shape. Sunlight streams from a nearby window, casting soft shadows and highlighting the texture of the ceramics. The mood is warm, inviting, and artisanal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoWQBoWjoi58np5C_R6ZzEe1pzv_yuSJudBiO10EZBbQpjH-5lmBBp5ViCvEyhBJDxEAnhSAQ-K2rKpXbZ8Fszl9mej_aYwNg-RWhza5NJvgv2yX3QRlw-L1RJC18dmVAsxiqttK6JxEgUtc_8EJgY2m5FIR6hECRxYSr-wF3oTOE3zDWTYc4q0gJdGZdSyAcAYXPbN9RuWxV3ezkfg6-O4PQsqNVhVmR08rfnG3hzG9DIkFOOwAj-_w"/>
+</div>
+<span class="font-medium text-on-surface line-clamp-1">Handmade Ceramic Mugs</span>
+</div>
+</td>
+<td class="px-lg py-sm font-semibold text-on-surface">1,200</td>
+<td class="px-lg py-sm">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-secondary-container/10 text-secondary-container font-label-sm text-label-sm whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-secondary-container mr-1"></span> Pending
+                                    </span>
+</td>
+<td class="px-lg py-sm text-on-surface-variant hidden sm:table-cell">45</td>
+<td class="px-lg py-sm text-on-surface-variant hidden md:table-cell">Oct 26, 2023</td>
+<td class="px-lg py-sm text-right">
+<div class="flex justify-end gap-sm text-outline">
+<button class="hover:text-primary transition-colors p-1" title="Edit"><span class="material-symbols-outlined text-[20px]">edit</span></button>
+<button class="hover:text-error transition-colors p-1" title="Delete"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-high pb-8">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="text-headline-sm font-headline-md text-primary tracking-tight">BazaarSathi</span>
+<p class="font-label-md text-label-md text-on-surface-variant mt-2">© 2024 BazaarSathi. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-x-lg gap-y-sm">
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

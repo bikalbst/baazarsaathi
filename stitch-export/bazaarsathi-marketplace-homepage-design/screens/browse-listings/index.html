@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BazaarSathi - Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#684000",
+                        "surface-container-high": "#e2e8f8",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#00422b",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d3daea",
+                        "surface": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "on-surface": "#151c27",
+                        "primary": "#006c49",
+                        "primary-container": "#10b981",
+                        "outline-variant": "#bbcabf",
+                        "surface-container-highest": "#dce2f3",
+                        "on-primary-fixed-variant": "#005236",
+                        "background": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#6c7a71",
+                        "on-error-container": "#93000a",
+                        "secondary": "#855300",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "secondary-container": "#fea619",
+                        "surface-container": "#e7eefe",
+                        "inverse-primary": "#4edea3",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "secondary-fixed": "#ffddb8",
+                        "tertiary-container": "#fc7c78",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-fixed": "#2a1700",
+                        "on-background": "#151c27",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-variant": "#dce2f3",
+                        "on-primary-fixed": "#002113",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#410005",
+                        "on-tertiary-container": "#711419",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-tint": "#006c49",
+                        "primary-fixed": "#6ffbbe",
+                        "on-surface-variant": "#3c4a42",
+                        "surface-container-low": "#f0f3ff",
+                        "primary-fixed-dim": "#4edea3",
+                        "tertiary": "#a43a3a",
+                        "inverse-surface": "#2a313d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "0.25rem",
+                        "xl": "2rem",
+                        "lg": "1.5rem",
+                        "2xl": "3rem",
+                        "md": "1rem",
+                        "container-max": "1280px",
+                        "sm": "0.5rem",
+                        "base": "4px",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    },
+                    boxShadow: {
+                        'level-1': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'level-2': '0 10px 30px rgba(0, 0, 0, 0.08)',
+                        'level-3': '0 20px 50px rgba(0, 0, 0, 0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest w-full sticky top-0 z-50 shadow-sm">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<span class="text-headline-md font-headline-md text-primary tracking-tight">BazaarSathi</span>
+</div>
+<div class="flex-1 max-w-xl mx-lg hidden md:block relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border-0 rounded-full pl-12 pr-4 py-2 font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container transition-shadow" placeholder="Search marketplace..." type="text"/>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden md:flex text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md text-label-md active:scale-95 transition-transform items-center gap-xs">
+                    Login
+                </button>
+<button class="bg-primary hover:bg-surface-tint text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg shadow-level-1 hover:shadow-level-2 active:scale-95 transition-all duration-200 flex items-center gap-xs">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+                    Post Item
+                </button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-gutter py-xl">
+<!-- Secondary Header -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-lg pb-md border-b border-surface-variant gap-4">
+<h1 class="text-headline-md font-headline-md text-on-surface">Marketplace <span class="text-body-md font-body-md text-on-surface-variant ml-2 font-normal">Showing 1,240 results</span></h1>
+<div class="flex items-center gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant whitespace-nowrap" for="sort">Sort by:</label>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest border border-outline-variant rounded-lg pl-3 pr-8 py-1.5 text-body-md font-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:border-primary-container cursor-pointer outline-none" id="sort">
+<option>Most Recent</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Distance</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-xl items-start">
+<!-- Filters Sidebar -->
+<aside class="w-full md:w-64 shrink-0 bg-surface-container-lowest rounded-xl shadow-level-1 p-lg sticky top-24">
+<h2 class="text-label-md font-label-md text-on-surface mb-md pb-xs border-b border-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">tune</span> Filters
+                </h2>
+<!-- Categories -->
+<div class="mb-lg">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Categories</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary-container text-primary-container w-4 h-4 border-outline-variant" type="checkbox"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Electronics</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="rounded text-primary focus:ring-primary-container text-primary-container w-4 h-4 border-outline-variant" type="checkbox"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Home &amp; Garden</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary-container text-primary-container w-4 h-4 border-outline-variant" type="checkbox"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Vehicles</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary-container text-primary-container w-4 h-4 border-outline-variant" type="checkbox"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Fashion</span>
+</label>
+</div>
+</div>
+<!-- Price Range -->
+<div class="mb-lg">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Price Range</h3>
+<div class="flex items-center gap-2 mb-2">
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-md px-2 py-1 text-body-md font-body-md focus:ring-2 focus:ring-primary-container focus:border-primary-container outline-none" placeholder="Min" type="number"/>
+<span class="text-on-surface-variant">-</span>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-md px-2 py-1 text-body-md font-body-md focus:ring-2 focus:ring-primary-container focus:border-primary-container outline-none" placeholder="Max" type="number"/>
+</div>
+<input class="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary-container" max="1000" min="0" type="range"/>
+</div>
+<!-- Condition -->
+<div class="mb-lg">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Condition</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="text-primary focus:ring-primary-container border-outline-variant w-4 h-4" name="condition" type="radio"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">New</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="text-primary focus:ring-primary-container border-outline-variant w-4 h-4" name="condition" type="radio"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Like New</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="text-primary focus:ring-primary-container border-outline-variant w-4 h-4" name="condition" type="radio"/>
+<span class="text-body-md font-body-md text-on-surface group-hover:text-primary transition-colors">Used</span>
+</label>
+</div>
+</div>
+<!-- Location -->
+<div>
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Location</h3>
+<div class="relative mb-2">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline text-sm">location_on</span>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-md pl-8 pr-2 py-1.5 text-body-md font-body-md focus:ring-2 focus:ring-primary-container focus:border-primary-container outline-none" placeholder="Zip or City" type="text"/>
+</div>
+<button class="text-primary text-label-md font-label-md hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">my_location</span> Use current location
+                    </button>
+</div>
+<button class="w-full mt-lg bg-surface-container-high text-on-surface font-label-md text-label-md py-2 rounded-lg hover:bg-surface-variant transition-colors border border-outline-variant">
+                    Reset Filters
+                </button>
+</aside>
+<!-- Main Content Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-lg shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 group cursor-pointer overflow-hidden flex flex-col relative">
+<button class="absolute top-2 right-2 p-1.5 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-tertiary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully crafted vintage film camera resting on a rustic wooden table, bathed in warm, soft afternoon sunlight. The camera has a silver and black leatherette finish, looking well-maintained. The background is slightly blurred showing a cozy, brightly lit modern home interior setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqNJMhFJ60AikB7iFdrUehsWoSBc0pStKu6Qawdq4j5xbvHkY0_MJ8963qLiH8GYtyjff6zr-wyZur958YOGC2JrdLzC-36kA1ZY5ARRn-BCO7HpxrjMlGDYzK4ERr3sLpYasdeHDGN373pJi2FLb2g9jnSEkUF6yCq2YGYT1LzLKhMvSdKVXJ7PQ0EbKsowT56fb5KIrWtXjHl4paJUM0r5jbZYT7hz0gGh1LSn3wFCjGsKYskbyvg"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-body-md font-body-md font-semibold text-on-surface line-clamp-1 group-hover:text-primary transition-colors">Vintage Film Camera</h3>
+<span class="text-body-md font-body-md font-bold text-primary-container">$120</span>
+</div>
+<span class="inline-block px-2 py-0.5 bg-primary-container/10 text-primary-container text-label-sm font-label-sm rounded-full w-fit mb-3">Like New</span>
+<div class="mt-auto pt-3 border-t border-surface-variant flex justify-between items-center text-on-surface-variant">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold text-xs">JD</div>
+<span class="text-label-sm font-label-sm">John D.</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-label-sm font-label-sm">Oakland, CA</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-lg shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 group cursor-pointer overflow-hidden flex flex-col relative">
+<button class="absolute top-2 right-2 p-1.5 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-tertiary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, ergonomic black mesh desk chair positioned in a bright, minimalist home office space. The room features a clean white desk, a small potted green plant, and natural light streaming in from a large window. The chair looks modern, comfortable, and in perfect condition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPxpIhSOadaQ10tqmtDJvvOE7tvVVTQ2EsMeAgrJT5-nsvt4EcczRP4ncRdNsQhWgT-tjDb2bj3mi1uMkaAqA3fEFT4JzqZRV4RUMcq9IXLz9cEPodspNt5YG9b3IKds2Te0Ksr_WtLQrqY4cj2f6navY_wA1WVZ_NBg_iTG1c6N1damhz5mmhkG-LczLAL_-wwJDtsSH8nTyhwsbAH4Xs_Fhqi6QWPAdZEFON_X0FaxTjmh_2lebQzA"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-body-md font-body-md font-semibold text-on-surface line-clamp-1 group-hover:text-primary transition-colors">Ergonomic Desk Chair</h3>
+<span class="text-body-md font-body-md font-bold text-primary-container">$85</span>
+</div>
+<span class="inline-block px-2 py-0.5 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded-full w-fit mb-3">Used - Good</span>
+<div class="mt-auto pt-3 border-t border-surface-variant flex justify-between items-center text-on-surface-variant">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small avatar portrait of a smiling woman with dark hair against a light blue background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKgK9oJE5JKj7jiwRGtkTKNSHr8rZrBcG9YPJw2JtAOzKuZX5Pth35YnZHmWvasvh3H3n7QbOLElNA1U7SVPdxuhPQCEQS4MbwxTN8h7nLPRvll2UhwTUlNsQqVIQQ6TTpl8iU_7CzbVEsF8PLu_7toMCF472dLR-sgJsgMHPxBpJKwYCohbNMT9JYbhJfpo6so2FOFBi7_S2vjFuJlssP5ui2DqifA4gRGA5GnhrJ4mElb02hg2vhiQ"/>
+<span class="text-label-sm font-label-sm">Sarah M.</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-label-sm font-label-sm">Berkeley, CA</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-lg shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 group cursor-pointer overflow-hidden flex flex-col relative">
+<button class="absolute top-2 right-2 p-1.5 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-tertiary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A collection of handmade ceramic mugs arranged neatly on a light wood surface. The mugs feature beautiful earth tones with subtle glossy glazes, in shades of sage green, speckled white, and warm terracotta. The lighting is soft and natural, emphasizing the artisanal quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByDsd1Yi7X2cmv_WbI2n3sWnAmsmaK89U2geGTmz2XuvsK-2ImVdmIjqAnVMSyttQKiBIAeUQzNT20NyvcfBSsrTFg9PqDyl0Zh9_uM6eOd6H4BoGJ9OPv4B5mnccri_NRm2O-Z4KjPfbX7Lk5fIcSx0wldod9jkP2e4fAV9TXRVjPuKkyo4f5VnZQ0Jp90mxzu5JLoPkeBEPlVH5SWwUTmzRlHPAeDi0YROYycs6a6tRSd6Z78bqPfQ"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-body-md font-body-md font-semibold text-on-surface line-clamp-1 group-hover:text-primary transition-colors">Handmade Ceramic Mugs Set</h3>
+<span class="text-body-md font-body-md font-bold text-primary-container">$45</span>
+</div>
+<span class="inline-block px-2 py-0.5 bg-secondary-container/20 text-secondary text-label-sm font-label-sm rounded-full w-fit mb-3">New</span>
+<div class="mt-auto pt-3 border-t border-surface-variant flex justify-between items-center text-on-surface-variant">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container/20 flex items-center justify-center text-primary font-bold text-xs">M</div>
+<span class="text-label-sm font-label-sm">Mike's Crafts</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-label-sm font-label-sm">San Leandro, CA</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Load More Button -->
+<div class="col-span-full flex justify-center mt-lg">
+<button class="px-6 py-2 bg-surface-container-high text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:bg-surface-variant transition-colors border border-outline-variant">
+                            Load More Results
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high w-full mt-xl py-xl border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-gutter max-w-container-max mx-auto">
+<div>
+<span class="text-headline-sm font-headline-md text-primary tracking-tight">BazaarSathi</span>
+<p class="text-label-md font-label-md text-on-surface-variant mt-2">© 2024 BazaarSathi. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-x-lg gap-y-4 font-label-md text-label-md">
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About Us</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Careers</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:underline hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>
