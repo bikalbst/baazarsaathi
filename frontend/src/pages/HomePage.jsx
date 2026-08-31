@@ -9,7 +9,7 @@ import TrustStrip from '../components/TrustStrip'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-surface text-on-surface">
+    <div className="min-h-screen bg-paper text-ink">
       <Header />
       <main>
         <HeroSection />
