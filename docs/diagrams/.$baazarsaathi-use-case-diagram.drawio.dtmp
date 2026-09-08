@@ -1,0 +1,323 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="bazaarsathi-use-case" name="BazaarSathi Use Case Diagram">
+    <mxGraphModel dx="2020" dy="1201" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1750" background="light-dark(#FFFFFF,transparent)" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#263238;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);labelBackgroundColor=none;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; " vertex="1">
+          <mxGeometry height="1540" width="1800" x="302" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="buyer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#17365D;strokeColor=#17365D;fontColor=light-dark(#000000,#000000);fontFamily=Times New Roman;fontSize=21;fontStyle=1;strokeWidth=5;" value="Buyer" vertex="1">
+          <mxGeometry height="150" width="100" x="34" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="seller" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#17365D;strokeColor=#17365D;fontColor=light-dark(#000000,#000000);fontFamily=Times New Roman;fontSize=21;fontStyle=1;strokeWidth=5;" value="Seller" vertex="1">
+          <mxGeometry height="150" width="100" x="2205" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#8B2E2E;strokeColor=#8B2E2E;fontColor=light-dark(#000000,#000000);fontFamily=Times New Roman;fontSize=21;fontStyle=1;strokeWidth=5;" value="Administrator" vertex="1">
+          <mxGeometry height="160" width="140" x="2185" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="register" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Register Account" vertex="1">
+          <mxGeometry height="90" width="310" x="400" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="login" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Log In" vertex="1">
+          <mxGeometry height="90" width="280" x="805" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="validate_credentials" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F8A5B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Validate Credentials" vertex="1">
+          <mxGeometry height="90" width="320" x="1210" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_dashboard" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Access Admin Dashboard" vertex="1">
+          <mxGeometry height="90" width="340" x="1660" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="browse" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Browse and Search Listings" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="view_listing" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="View Listing Details" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="favorite" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B78628;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Save or Remove Favourite" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B78628;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Chat with Buyer or Seller" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="create_order" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Create Purchase Order" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="make_payment" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Make Payment" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="view_purchases" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="View Purchase History" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="submit_review" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B78628;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Submit Verified Review" vertex="1">
+          <mxGeometry height="95" width="330" x="390" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="manage_listings" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Manage Listings" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="create_listing" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Create Listing" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="update_listing" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Update or Delete Listing" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="price_estimate" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B78628;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Request Price Estimate" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="check_availability" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F8A5B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Check Listing Availability" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="verify_payment" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F8A5B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Verify Payment" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="view_sales" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#527AA3;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="View Sales, Wallet and Reputation" vertex="1">
+          <mxGeometry height="95" width="330" x="850" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="manage_users" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Manage Users" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="moderate_listings" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Moderate Listings" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor_orders" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Monitor Orders and Payments" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="approve_escrow" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Approve Escrow Release" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="release_earnings" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F8A5B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Release 90% Seller Earnings" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="auto_approve" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B78628;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Automatically Approve Order" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="configure_auto" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A64B4B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Configure Auto-Accept" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="check_completed" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F8A5B;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontColor=light-dark(#000000,#000000);" value="Check Completed Order" vertex="1">
+          <mxGeometry height="95" width="340" x="1510" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_b_register" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="register">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="260" />
+              <mxPoint x="320" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_login" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="190" />
+              <mxPoint x="945" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_browse" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="browse">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="408" />
+              <mxPoint x="320" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_view" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="view_listing">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="558" />
+              <mxPoint x="320" y="558" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_favorite" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="favorite">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="708" />
+              <mxPoint x="320" y="708" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_chat" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="chat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="858" />
+              <mxPoint x="320" y="858" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_order" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="create_order">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="1008" />
+              <mxPoint x="320" y="1008" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_payment" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="make_payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1158" />
+              <mxPoint x="320" y="1158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_history" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="view_purchases">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="1308" />
+              <mxPoint x="320" y="1308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_b_review" edge="1" parent="1" source="buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="submit_review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="1458" />
+              <mxPoint x="320" y="1458" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_s_register" edge="1" parent="1" source="seller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="register">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2160" y="175" />
+              <mxPoint x="555" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_s_login" edge="1" parent="1" source="seller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2140" y="325" />
+              <mxPoint x="945" y="325" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_s_manage" edge="1" parent="1" source="seller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="manage_listings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2120" y="335" />
+              <mxPoint x="1250" y="335" />
+              <mxPoint x="1250" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_s_chat" edge="1" parent="1" source="seller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="chat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2140" y="930" />
+              <mxPoint x="760" y="930" />
+              <mxPoint x="760" y="858" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_s_sales" edge="1" parent="1" source="seller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#455A64;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="view_sales">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2160" y="1375" />
+              <mxPoint x="1220" y="1375" />
+              <mxPoint x="1220" y="1308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_dashboard" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="admin_dashboard">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2150" y="330" />
+              <mxPoint x="1830" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_users" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="manage_users">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2160" y="408" />
+              <mxPoint x="1940" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_listings" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="moderate_listings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2170" y="558" />
+              <mxPoint x="1940" y="558" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_orders" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="monitor_orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2180" y="708" />
+              <mxPoint x="1940" y="708" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_escrow" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="approve_escrow">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2190" y="858" />
+              <mxPoint x="1940" y="858" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc_a_configure" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#8B2E2E;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="configure_auto">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2170" y="1308" />
+              <mxPoint x="1940" y="1308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc_login_validate" edge="1" parent="1" source="login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="validate_credentials" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_create_manage" edge="1" parent="1" source="create_listing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#527AA3;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="manage_listings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_update_manage" edge="1" parent="1" source="update_listing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#527AA3;strokeWidth=5;fontSize=21;fontColor=light-dark(#000000,#000000);" target="manage_listings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="708" />
+              <mxPoint x="1210" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc_dashboard_login" edge="1" parent="1" source="admin_dashboard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1830" y="190" />
+              <mxPoint x="945" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc_order_check" edge="1" parent="1" source="create_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="check_availability" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_payment_verify" edge="1" parent="1" source="make_payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="verify_payment" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_approve_release" edge="1" parent="1" source="approve_escrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="release_earnings" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_review_completed" edge="1" parent="1" source="submit_review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#2E7D32;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="check_completed" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_favorite_view" edge="1" parent="1" source="favorite" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#B26A00;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="view_listing" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_chat_view" edge="1" parent="1" source="chat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#B26A00;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="view_listing" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_estimate_create" edge="1" parent="1" source="price_estimate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#B26A00;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="create_listing" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_review_history" edge="1" parent="1" source="submit_review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#B26A00;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="view_purchases" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_auto_verify" edge="1" parent="1" source="auto_approve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;strokeColor=#B26A00;strokeWidth=5;fontFamily=Times New Roman;fontSize=21;fontStyle=2;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" target="verify_payment" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt; {autoAccept = true}">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

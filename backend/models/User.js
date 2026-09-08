@@ -32,6 +32,18 @@ const userSchema = new mongoose.Schema({
     default: 0,
     min: [0, 'Wallet balance cannot be negative'],
   },
+  reputation: {
+    averageRating: { type: Number, default: 0, min: 0, max: 5 },
+    ratingCount: { type: Number, default: 0, min: 0 },
+    completionRate: { type: Number, default: 0, min: 0, max: 1 },
+    score: { type: Number, default: 0, min: 0, max: 100 },
+    tier: {
+      type: String,
+      enum: ['new', 'developing', 'trusted', 'top-seller'],
+      default: 'new',
+    },
+    updatedAt: Date,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

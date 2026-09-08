@@ -45,6 +45,16 @@ const protect = async (req, res, next) => {
   }
 };
 
+const optionalAuth = async (req, res, next) => {
+  const authorization = req.headers.authorization;
+
+  if (!authorization) {
+    return next();
+  }
+
+  return protect(req, res, next);
+};
+
 const authorizeRoles = (...roles) => async (req, res, next) => {
   if (!req.user || !roles.includes(req.user.role)) {
     return res.status(403).json({
@@ -57,4 +67,4 @@ const authorizeRoles = (...roles) => async (req, res, next) => {
   return next();
 };
 
-module.exports = { protect, authorizeRoles };
+module.exports = { protect, optionalAuth, authorizeRoles };
