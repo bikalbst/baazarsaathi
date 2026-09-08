@@ -24,8 +24,10 @@ export default function LoginPage() {
         remember: form.get('remember') === 'on',
       })
       const requestedPath = location.state?.from?.pathname
-      const fallbackPath = user.role === 'admin' ? '/admin' : '/account'
-      navigate(requestedPath || fallbackPath, { replace: true })
+      const destinationPath = user.role === 'admin'
+        ? '/admin'
+        : requestedPath || '/account'
+      navigate(destinationPath, { replace: true })
     } catch (requestError) {
       setError(requestError.message)
     } finally {

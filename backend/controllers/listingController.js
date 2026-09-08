@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Listing = require('../models/Listing');
+const activityService = require('../services/activityService');
 
 const editableFields = [
   'title',
@@ -112,7 +113,7 @@ const getListings = async (req, res) => {
     }
 
     const listings = await Listing.find(filter)
-      .populate('seller', 'name role')
+      .populate('seller', 'name role reputation')
       .sort(sortBy);
 
     return res.status(200).json({
@@ -139,7 +140,7 @@ const getListingById = async (req, res) => {
       req.params.id,
       { $inc: { views: 1 } },
       { new: true, runValidators: true },
-    ).populate('seller', 'name role');
+    ).populate('seller', 'name role reputation');
 
     if (!listing) {
       return res.status(404).json({
@@ -147,6 +148,14 @@ const getListingById = async (req, res) => {
         data: null,
         message: 'Listing not found',
       });
+    }
+
+    if (req.user) {
+      try {
+        await activityService.recordListingView(req.user._id, listing._id);
+      } catch (error) {
+        // Activity tracking must never prevent a buyer from viewing a listing.
+      }
     }
 
     return res.status(200).json({
@@ -162,7 +171,7 @@ const getListingById = async (req, res) => {
 const getMyListings = async (req, res) => {
   try {
     const listings = await Listing.find({ seller: req.user._id })
-      .populate('seller', 'name role')
+      .populate('seller', 'name role reputation')
       .sort({ createdAt: -1 });
 
     return res.status(200).json({
@@ -187,7 +196,7 @@ const createListing = async (req, res) => {
 
     listingData.seller = req.user._id;
     const listing = await Listing.create(listingData);
-    await listing.populate('seller', 'name role');
+    await listing.populate('seller', 'name role reputation');
 
     return res.status(201).json({
       success: true,
@@ -234,7 +243,7 @@ const updateListing = async (req, res) => {
     }
 
     await listing.save();
-    await listing.populate('seller', 'name role');
+    await listing.populate('seller', 'name role reputation');
 
     return res.status(200).json({
       success: true,

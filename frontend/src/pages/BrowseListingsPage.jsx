@@ -1,8 +1,9 @@
-import { Heart, Search, SlidersHorizontal } from 'lucide-react'
+import { Search, SlidersHorizontal } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import FavoriteButton from '../components/FavoriteButton'
 import { apiRequest } from '../services/api'
 
 const formatNpr = (value) => new Intl.NumberFormat('en-NP', {
@@ -12,7 +13,6 @@ const formatNpr = (value) => new Intl.NumberFormat('en-NP', {
 }).format(value)
 
 function BrowseCard({ listing }) {
-  const [favorite, setFavorite] = useState(false)
   const image = listing.images?.[0] || '/assets/stitch/browse-listings-0.jpg'
 
   return (
@@ -21,9 +21,7 @@ function BrowseCard({ listing }) {
         <Link to={`/listings/${listing._id}`}>
           <img className="h-full w-full object-cover transition duration-500 hover:scale-105" src={image} alt={listing.title} />
         </Link>
-        <button className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-on-surface-variant shadow-sm" type="button" aria-label="Toggle favorite" onClick={() => setFavorite(!favorite)}>
-          <Heart className="h-5 w-5" fill={favorite ? '#a43a3a' : 'none'} color={favorite ? '#a43a3a' : 'currentColor'} />
-        </button>
+        <FavoriteButton className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-on-surface-variant shadow-sm disabled:opacity-60" iconClassName="h-5 w-5" listingId={listing._id} />
       </div>
       <div className="p-4">
         <div className="flex items-start justify-between gap-3">

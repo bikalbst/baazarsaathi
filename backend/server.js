@@ -12,6 +12,9 @@ const authRoutes = require("./routes/authRoutes");
 const listingRoutes = require("./routes/listingRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const chatRoutes = require("./routes/chatRoutes");
+const activityRoutes = require("./routes/activityRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
+const pricePredictionRoutes = require("./routes/pricePredictionRoutes");
 const { initializeSocket } = require("./socket/socketServer");
 
 const app = express();
@@ -36,6 +39,9 @@ app.get("/", (req, res) =>
         createOrder: "POST /api/orders/create",
         verifyPayment: "POST /api/orders/khalti-verify",
         conversations: "GET /api/chat/conversations",
+        favorites: "GET /api/activity/favorites",
+        reviews: "GET /api/reviews/listing/:listingId",
+        pricePrediction: "POST /api/price/predict",
       },
     },
     message: "BazaarSathi API is running",
@@ -46,6 +52,9 @@ app.use("/api/auth", authRoutes);
 app.use("/api/listings", listingRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/chat", chatRoutes);
+app.use("/api/activity", activityRoutes);
+app.use("/api/reviews", reviewRoutes);
+app.use("/api/price", pricePredictionRoutes);
 
 app.use((req, res) =>
   res.status(404).json({
